@@ -1,0 +1,1352 @@
+{
+  "actions": [
+    {
+      "args": [
+        "rbadmin",
+        "spec-repo",
+        "p2-eval-twice",
+        "778899"
+      ],
+      "op": "create_label"
+    },
+    {
+      "args": [
+        "rbadmin",
+        "spec-repo",
+        "2",
+        "p2-eval-twice"
+      ],
+      "op": "add_label"
+    },
+    {
+      "args": [
+        "rbadmin",
+        "spec-repo",
+        "2",
+        "p2-eval-twice"
+      ],
+      "op": "add_label"
+    },
+    {
+      "args": [
+        "rbadmin",
+        "spec-repo",
+        "2"
+      ],
+      "op": "get_issue"
+    }
+  ],
+  "case": "R025",
+  "reference_initial": {
+    "issues": [
+      {
+        "assets": [],
+        "assignee": null,
+        "assignees": null,
+        "body": "synthetic second issue",
+        "closed_at": null,
+        "comments": 0,
+        "created_at": "2026-09-22T18:26:40Z",
+        "due_date": null,
+        "html_url": "http://127.0.0.1:13002/rbadmin/spec-repo/issues/2",
+        "id": 120,
+        "is_locked": false,
+        "labels": [],
+        "milestone": null,
+        "number": 2,
+        "original_author": "",
+        "original_author_id": 0,
+        "pin_order": 0,
+        "pull_request": null,
+        "ref": "",
+        "repository": {
+          "full_name": "rbadmin/spec-repo",
+          "id": 58,
+          "name": "spec-repo",
+          "owner": "rbadmin"
+        },
+        "state": "open",
+        "title": "issue-two",
+        "updated_at": "2026-09-22T18:26:40Z",
+        "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/issues/2",
+        "user": {
+          "active": true,
+          "avatar_url": "http://127.0.0.1:13002/avatars/ff2030324e333a44f868b1dcaad49246",
+          "created": "2026-09-22T18:26:30Z",
+          "description": "",
+          "email": "rbadmin@example.invalid",
+          "followers_count": 0,
+          "following_count": 0,
+          "full_name": "",
+          "html_url": "http://127.0.0.1:13002/rbadmin",
+          "id": 1,
+          "is_admin": true,
+          "language": "",
+          "last_login": "1970-01-01T00:00:00Z",
+          "location": "",
+          "login": "rbadmin",
+          "login_name": "",
+          "prohibit_login": false,
+          "restricted": false,
+          "source_id": 0,
+          "starred_repos_count": 0,
+          "username": "rbadmin",
+          "visibility": "public",
+          "website": ""
+        }
+      },
+      {
+        "assets": [],
+        "assignee": null,
+        "assignees": null,
+        "body": "synthetic first issue",
+        "closed_at": null,
+        "comments": 0,
+        "created_at": "2026-09-22T18:26:40Z",
+        "due_date": null,
+        "html_url": "http://127.0.0.1:13002/rbadmin/spec-repo/issues/1",
+        "id": 119,
+        "is_locked": false,
+        "labels": [
+          {
+            "color": "d73a4a",
+            "description": "",
+            "exclusive": false,
+            "id": 184,
+            "is_archived": false,
+            "name": "bug",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/184"
+          }
+        ],
+        "milestone": null,
+        "number": 1,
+        "original_author": "",
+        "original_author_id": 0,
+        "pin_order": 0,
+        "pull_request": null,
+        "ref": "",
+        "repository": {
+          "full_name": "rbadmin/spec-repo",
+          "id": 58,
+          "name": "spec-repo",
+          "owner": "rbadmin"
+        },
+        "state": "open",
+        "title": "issue-one",
+        "updated_at": "2026-09-22T18:26:40Z",
+        "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/issues/1",
+        "user": {
+          "active": true,
+          "avatar_url": "http://127.0.0.1:13002/avatars/ff2030324e333a44f868b1dcaad49246",
+          "created": "2026-09-22T18:26:30Z",
+          "description": "",
+          "email": "rbadmin@example.invalid",
+          "followers_count": 0,
+          "following_count": 0,
+          "full_name": "",
+          "html_url": "http://127.0.0.1:13002/rbadmin",
+          "id": 1,
+          "is_admin": true,
+          "language": "",
+          "last_login": "1970-01-01T00:00:00Z",
+          "location": "",
+          "login": "rbadmin",
+          "login_name": "",
+          "prohibit_login": false,
+          "restricted": false,
+          "source_id": 0,
+          "starred_repos_count": 0,
+          "username": "rbadmin",
+          "visibility": "public",
+          "website": ""
+        }
+      }
+    ],
+    "labels": [
+      {
+        "color": "6f42c1",
+        "description": "",
+        "exclusive": false,
+        "id": 186,
+        "is_archived": false,
+        "name": "api",
+        "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/186"
+      },
+      {
+        "color": "d73a4a",
+        "description": "",
+        "exclusive": false,
+        "id": 184,
+        "is_archived": false,
+        "name": "bug",
+        "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/184"
+      },
+      {
+        "color": "0e8a16",
+        "description": "",
+        "exclusive": false,
+        "id": 185,
+        "is_archived": false,
+        "name": "ui",
+        "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/185"
+      }
+    ]
+  },
+  "simulator_initial": {
+    "issues": [
+      {
+        "assignees": [],
+        "body": "synthetic first issue",
+        "closed_at": null,
+        "created_at": "2000-01-01T00:00:00Z",
+        "labels": [
+          {
+            "color": "d73a4a",
+            "name": "bug"
+          }
+        ],
+        "number": 1,
+        "state": "open",
+        "title": "issue-one",
+        "updated_at": "2000-01-01T00:00:00Z",
+        "url": "/repos/spec-repo/issues/1"
+      },
+      {
+        "assignees": [],
+        "body": "synthetic second issue",
+        "closed_at": null,
+        "created_at": "2000-01-01T00:00:00Z",
+        "labels": [],
+        "number": 2,
+        "state": "open",
+        "title": "issue-two",
+        "updated_at": "2000-01-01T00:00:00Z",
+        "url": "/repos/spec-repo/issues/2"
+      }
+    ],
+    "labels": [
+      {
+        "color": "d73a4a",
+        "name": "bug"
+      },
+      {
+        "color": "0e8a16",
+        "name": "ui"
+      },
+      {
+        "color": "6f42c1",
+        "name": "api"
+      }
+    ]
+  },
+  "steps": [
+    {
+      "action": {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "p2-eval-twice",
+          "778899"
+        ],
+        "op": "create_label"
+      },
+      "reference_error": null,
+      "reference_response": {
+        "color": "778899",
+        "description": "",
+        "exclusive": false,
+        "id": 187,
+        "is_archived": false,
+        "name": "p2-eval-twice",
+        "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/187"
+      },
+      "reference_state": {
+        "issues": [
+          {
+            "assets": [],
+            "assignee": null,
+            "assignees": null,
+            "body": "synthetic second issue",
+            "closed_at": null,
+            "comments": 0,
+            "created_at": "2026-09-22T18:26:40Z",
+            "due_date": null,
+            "html_url": "http://127.0.0.1:13002/rbadmin/spec-repo/issues/2",
+            "id": 120,
+            "is_locked": false,
+            "labels": [],
+            "milestone": null,
+            "number": 2,
+            "original_author": "",
+            "original_author_id": 0,
+            "pin_order": 0,
+            "pull_request": null,
+            "ref": "",
+            "repository": {
+              "full_name": "rbadmin/spec-repo",
+              "id": 58,
+              "name": "spec-repo",
+              "owner": "rbadmin"
+            },
+            "state": "open",
+            "title": "issue-two",
+            "updated_at": "2026-09-22T18:26:40Z",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/issues/2",
+            "user": {
+              "active": true,
+              "avatar_url": "http://127.0.0.1:13002/avatars/ff2030324e333a44f868b1dcaad49246",
+              "created": "2026-09-22T18:26:30Z",
+              "description": "",
+              "email": "rbadmin@example.invalid",
+              "followers_count": 0,
+              "following_count": 0,
+              "full_name": "",
+              "html_url": "http://127.0.0.1:13002/rbadmin",
+              "id": 1,
+              "is_admin": true,
+              "language": "",
+              "last_login": "1970-01-01T00:00:00Z",
+              "location": "",
+              "login": "rbadmin",
+              "login_name": "",
+              "prohibit_login": false,
+              "restricted": false,
+              "source_id": 0,
+              "starred_repos_count": 0,
+              "username": "rbadmin",
+              "visibility": "public",
+              "website": ""
+            }
+          },
+          {
+            "assets": [],
+            "assignee": null,
+            "assignees": null,
+            "body": "synthetic first issue",
+            "closed_at": null,
+            "comments": 0,
+            "created_at": "2026-09-22T18:26:40Z",
+            "due_date": null,
+            "html_url": "http://127.0.0.1:13002/rbadmin/spec-repo/issues/1",
+            "id": 119,
+            "is_locked": false,
+            "labels": [
+              {
+                "color": "d73a4a",
+                "description": "",
+                "exclusive": false,
+                "id": 184,
+                "is_archived": false,
+                "name": "bug",
+                "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/184"
+              }
+            ],
+            "milestone": null,
+            "number": 1,
+            "original_author": "",
+            "original_author_id": 0,
+            "pin_order": 0,
+            "pull_request": null,
+            "ref": "",
+            "repository": {
+              "full_name": "rbadmin/spec-repo",
+              "id": 58,
+              "name": "spec-repo",
+              "owner": "rbadmin"
+            },
+            "state": "open",
+            "title": "issue-one",
+            "updated_at": "2026-09-22T18:26:40Z",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/issues/1",
+            "user": {
+              "active": true,
+              "avatar_url": "http://127.0.0.1:13002/avatars/ff2030324e333a44f868b1dcaad49246",
+              "created": "2026-09-22T18:26:30Z",
+              "description": "",
+              "email": "rbadmin@example.invalid",
+              "followers_count": 0,
+              "following_count": 0,
+              "full_name": "",
+              "html_url": "http://127.0.0.1:13002/rbadmin",
+              "id": 1,
+              "is_admin": true,
+              "language": "",
+              "last_login": "1970-01-01T00:00:00Z",
+              "location": "",
+              "login": "rbadmin",
+              "login_name": "",
+              "prohibit_login": false,
+              "restricted": false,
+              "source_id": 0,
+              "starred_repos_count": 0,
+              "username": "rbadmin",
+              "visibility": "public",
+              "website": ""
+            }
+          }
+        ],
+        "labels": [
+          {
+            "color": "6f42c1",
+            "description": "",
+            "exclusive": false,
+            "id": 186,
+            "is_archived": false,
+            "name": "api",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/186"
+          },
+          {
+            "color": "d73a4a",
+            "description": "",
+            "exclusive": false,
+            "id": 184,
+            "is_archived": false,
+            "name": "bug",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/184"
+          },
+          {
+            "color": "778899",
+            "description": "",
+            "exclusive": false,
+            "id": 187,
+            "is_archived": false,
+            "name": "p2-eval-twice",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/187"
+          },
+          {
+            "color": "0e8a16",
+            "description": "",
+            "exclusive": false,
+            "id": 185,
+            "is_archived": false,
+            "name": "ui",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/185"
+          }
+        ]
+      },
+      "simulator_error": null,
+      "simulator_response": {
+        "color": "778899",
+        "name": "p2-eval-twice"
+      },
+      "simulator_state": {
+        "issues": [
+          {
+            "assignees": [],
+            "body": "synthetic first issue",
+            "closed_at": null,
+            "created_at": "2000-01-01T00:00:00Z",
+            "labels": [
+              {
+                "color": "d73a4a",
+                "name": "bug"
+              }
+            ],
+            "number": 1,
+            "state": "open",
+            "title": "issue-one",
+            "updated_at": "2000-01-01T00:00:00Z",
+            "url": "/repos/spec-repo/issues/1"
+          },
+          {
+            "assignees": [],
+            "body": "synthetic second issue",
+            "closed_at": null,
+            "created_at": "2000-01-01T00:00:00Z",
+            "labels": [],
+            "number": 2,
+            "state": "open",
+            "title": "issue-two",
+            "updated_at": "2000-01-01T00:00:00Z",
+            "url": "/repos/spec-repo/issues/2"
+          }
+        ],
+        "labels": [
+          {
+            "color": "d73a4a",
+            "name": "bug"
+          },
+          {
+            "color": "0e8a16",
+            "name": "ui"
+          },
+          {
+            "color": "6f42c1",
+            "name": "api"
+          },
+          {
+            "color": "778899",
+            "name": "p2-eval-twice"
+          }
+        ]
+      }
+    },
+    {
+      "action": {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "2",
+          "p2-eval-twice"
+        ],
+        "op": "add_label"
+      },
+      "reference_error": null,
+      "reference_response": [
+        {
+          "color": "778899",
+          "description": "",
+          "exclusive": false,
+          "id": 187,
+          "is_archived": false,
+          "name": "p2-eval-twice",
+          "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/187"
+        }
+      ],
+      "reference_state": {
+        "issues": [
+          {
+            "assets": [],
+            "assignee": null,
+            "assignees": null,
+            "body": "synthetic second issue",
+            "closed_at": null,
+            "comments": 0,
+            "created_at": "2026-09-22T18:26:40Z",
+            "due_date": null,
+            "html_url": "http://127.0.0.1:13002/rbadmin/spec-repo/issues/2",
+            "id": 120,
+            "is_locked": false,
+            "labels": [
+              {
+                "color": "778899",
+                "description": "",
+                "exclusive": false,
+                "id": 187,
+                "is_archived": false,
+                "name": "p2-eval-twice",
+                "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/187"
+              }
+            ],
+            "milestone": null,
+            "number": 2,
+            "original_author": "",
+            "original_author_id": 0,
+            "pin_order": 0,
+            "pull_request": null,
+            "ref": "",
+            "repository": {
+              "full_name": "rbadmin/spec-repo",
+              "id": 58,
+              "name": "spec-repo",
+              "owner": "rbadmin"
+            },
+            "state": "open",
+            "title": "issue-two",
+            "updated_at": "2026-09-22T18:26:40Z",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/issues/2",
+            "user": {
+              "active": true,
+              "avatar_url": "http://127.0.0.1:13002/avatars/ff2030324e333a44f868b1dcaad49246",
+              "created": "2026-09-22T18:26:30Z",
+              "description": "",
+              "email": "rbadmin@example.invalid",
+              "followers_count": 0,
+              "following_count": 0,
+              "full_name": "",
+              "html_url": "http://127.0.0.1:13002/rbadmin",
+              "id": 1,
+              "is_admin": true,
+              "language": "",
+              "last_login": "1970-01-01T00:00:00Z",
+              "location": "",
+              "login": "rbadmin",
+              "login_name": "",
+              "prohibit_login": false,
+              "restricted": false,
+              "source_id": 0,
+              "starred_repos_count": 0,
+              "username": "rbadmin",
+              "visibility": "public",
+              "website": ""
+            }
+          },
+          {
+            "assets": [],
+            "assignee": null,
+            "assignees": null,
+            "body": "synthetic first issue",
+            "closed_at": null,
+            "comments": 0,
+            "created_at": "2026-09-22T18:26:40Z",
+            "due_date": null,
+            "html_url": "http://127.0.0.1:13002/rbadmin/spec-repo/issues/1",
+            "id": 119,
+            "is_locked": false,
+            "labels": [
+              {
+                "color": "d73a4a",
+                "description": "",
+                "exclusive": false,
+                "id": 184,
+                "is_archived": false,
+                "name": "bug",
+                "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/184"
+              }
+            ],
+            "milestone": null,
+            "number": 1,
+            "original_author": "",
+            "original_author_id": 0,
+            "pin_order": 0,
+            "pull_request": null,
+            "ref": "",
+            "repository": {
+              "full_name": "rbadmin/spec-repo",
+              "id": 58,
+              "name": "spec-repo",
+              "owner": "rbadmin"
+            },
+            "state": "open",
+            "title": "issue-one",
+            "updated_at": "2026-09-22T18:26:40Z",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/issues/1",
+            "user": {
+              "active": true,
+              "avatar_url": "http://127.0.0.1:13002/avatars/ff2030324e333a44f868b1dcaad49246",
+              "created": "2026-09-22T18:26:30Z",
+              "description": "",
+              "email": "rbadmin@example.invalid",
+              "followers_count": 0,
+              "following_count": 0,
+              "full_name": "",
+              "html_url": "http://127.0.0.1:13002/rbadmin",
+              "id": 1,
+              "is_admin": true,
+              "language": "",
+              "last_login": "1970-01-01T00:00:00Z",
+              "location": "",
+              "login": "rbadmin",
+              "login_name": "",
+              "prohibit_login": false,
+              "restricted": false,
+              "source_id": 0,
+              "starred_repos_count": 0,
+              "username": "rbadmin",
+              "visibility": "public",
+              "website": ""
+            }
+          }
+        ],
+        "labels": [
+          {
+            "color": "6f42c1",
+            "description": "",
+            "exclusive": false,
+            "id": 186,
+            "is_archived": false,
+            "name": "api",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/186"
+          },
+          {
+            "color": "d73a4a",
+            "description": "",
+            "exclusive": false,
+            "id": 184,
+            "is_archived": false,
+            "name": "bug",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/184"
+          },
+          {
+            "color": "778899",
+            "description": "",
+            "exclusive": false,
+            "id": 187,
+            "is_archived": false,
+            "name": "p2-eval-twice",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/187"
+          },
+          {
+            "color": "0e8a16",
+            "description": "",
+            "exclusive": false,
+            "id": 185,
+            "is_archived": false,
+            "name": "ui",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/185"
+          }
+        ]
+      },
+      "simulator_error": null,
+      "simulator_response": {
+        "assignees": [],
+        "body": "synthetic second issue",
+        "closed_at": null,
+        "created_at": "2000-01-01T00:00:00Z",
+        "labels": [
+          {
+            "color": "778899",
+            "name": "p2-eval-twice"
+          }
+        ],
+        "number": 2,
+        "state": "open",
+        "title": "issue-two",
+        "updated_at": "2000-01-01T00:00:00Z",
+        "url": "/repos/spec-repo/issues/2"
+      },
+      "simulator_state": {
+        "issues": [
+          {
+            "assignees": [],
+            "body": "synthetic first issue",
+            "closed_at": null,
+            "created_at": "2000-01-01T00:00:00Z",
+            "labels": [
+              {
+                "color": "d73a4a",
+                "name": "bug"
+              }
+            ],
+            "number": 1,
+            "state": "open",
+            "title": "issue-one",
+            "updated_at": "2000-01-01T00:00:00Z",
+            "url": "/repos/spec-repo/issues/1"
+          },
+          {
+            "assignees": [],
+            "body": "synthetic second issue",
+            "closed_at": null,
+            "created_at": "2000-01-01T00:00:00Z",
+            "labels": [
+              {
+                "color": "778899",
+                "name": "p2-eval-twice"
+              }
+            ],
+            "number": 2,
+            "state": "open",
+            "title": "issue-two",
+            "updated_at": "2000-01-01T00:00:00Z",
+            "url": "/repos/spec-repo/issues/2"
+          }
+        ],
+        "labels": [
+          {
+            "color": "d73a4a",
+            "name": "bug"
+          },
+          {
+            "color": "0e8a16",
+            "name": "ui"
+          },
+          {
+            "color": "6f42c1",
+            "name": "api"
+          },
+          {
+            "color": "778899",
+            "name": "p2-eval-twice"
+          }
+        ]
+      }
+    },
+    {
+      "action": {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "2",
+          "p2-eval-twice"
+        ],
+        "op": "add_label"
+      },
+      "reference_error": null,
+      "reference_response": [
+        {
+          "color": "778899",
+          "description": "",
+          "exclusive": false,
+          "id": 187,
+          "is_archived": false,
+          "name": "p2-eval-twice",
+          "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/187"
+        }
+      ],
+      "reference_state": {
+        "issues": [
+          {
+            "assets": [],
+            "assignee": null,
+            "assignees": null,
+            "body": "synthetic second issue",
+            "closed_at": null,
+            "comments": 0,
+            "created_at": "2026-09-22T18:26:40Z",
+            "due_date": null,
+            "html_url": "http://127.0.0.1:13002/rbadmin/spec-repo/issues/2",
+            "id": 120,
+            "is_locked": false,
+            "labels": [
+              {
+                "color": "778899",
+                "description": "",
+                "exclusive": false,
+                "id": 187,
+                "is_archived": false,
+                "name": "p2-eval-twice",
+                "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/187"
+              }
+            ],
+            "milestone": null,
+            "number": 2,
+            "original_author": "",
+            "original_author_id": 0,
+            "pin_order": 0,
+            "pull_request": null,
+            "ref": "",
+            "repository": {
+              "full_name": "rbadmin/spec-repo",
+              "id": 58,
+              "name": "spec-repo",
+              "owner": "rbadmin"
+            },
+            "state": "open",
+            "title": "issue-two",
+            "updated_at": "2026-09-22T18:26:40Z",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/issues/2",
+            "user": {
+              "active": true,
+              "avatar_url": "http://127.0.0.1:13002/avatars/ff2030324e333a44f868b1dcaad49246",
+              "created": "2026-09-22T18:26:30Z",
+              "description": "",
+              "email": "rbadmin@example.invalid",
+              "followers_count": 0,
+              "following_count": 0,
+              "full_name": "",
+              "html_url": "http://127.0.0.1:13002/rbadmin",
+              "id": 1,
+              "is_admin": true,
+              "language": "",
+              "last_login": "1970-01-01T00:00:00Z",
+              "location": "",
+              "login": "rbadmin",
+              "login_name": "",
+              "prohibit_login": false,
+              "restricted": false,
+              "source_id": 0,
+              "starred_repos_count": 0,
+              "username": "rbadmin",
+              "visibility": "public",
+              "website": ""
+            }
+          },
+          {
+            "assets": [],
+            "assignee": null,
+            "assignees": null,
+            "body": "synthetic first issue",
+            "closed_at": null,
+            "comments": 0,
+            "created_at": "2026-09-22T18:26:40Z",
+            "due_date": null,
+            "html_url": "http://127.0.0.1:13002/rbadmin/spec-repo/issues/1",
+            "id": 119,
+            "is_locked": false,
+            "labels": [
+              {
+                "color": "d73a4a",
+                "description": "",
+                "exclusive": false,
+                "id": 184,
+                "is_archived": false,
+                "name": "bug",
+                "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/184"
+              }
+            ],
+            "milestone": null,
+            "number": 1,
+            "original_author": "",
+            "original_author_id": 0,
+            "pin_order": 0,
+            "pull_request": null,
+            "ref": "",
+            "repository": {
+              "full_name": "rbadmin/spec-repo",
+              "id": 58,
+              "name": "spec-repo",
+              "owner": "rbadmin"
+            },
+            "state": "open",
+            "title": "issue-one",
+            "updated_at": "2026-09-22T18:26:40Z",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/issues/1",
+            "user": {
+              "active": true,
+              "avatar_url": "http://127.0.0.1:13002/avatars/ff2030324e333a44f868b1dcaad49246",
+              "created": "2026-09-22T18:26:30Z",
+              "description": "",
+              "email": "rbadmin@example.invalid",
+              "followers_count": 0,
+              "following_count": 0,
+              "full_name": "",
+              "html_url": "http://127.0.0.1:13002/rbadmin",
+              "id": 1,
+              "is_admin": true,
+              "language": "",
+              "last_login": "1970-01-01T00:00:00Z",
+              "location": "",
+              "login": "rbadmin",
+              "login_name": "",
+              "prohibit_login": false,
+              "restricted": false,
+              "source_id": 0,
+              "starred_repos_count": 0,
+              "username": "rbadmin",
+              "visibility": "public",
+              "website": ""
+            }
+          }
+        ],
+        "labels": [
+          {
+            "color": "6f42c1",
+            "description": "",
+            "exclusive": false,
+            "id": 186,
+            "is_archived": false,
+            "name": "api",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/186"
+          },
+          {
+            "color": "d73a4a",
+            "description": "",
+            "exclusive": false,
+            "id": 184,
+            "is_archived": false,
+            "name": "bug",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/184"
+          },
+          {
+            "color": "778899",
+            "description": "",
+            "exclusive": false,
+            "id": 187,
+            "is_archived": false,
+            "name": "p2-eval-twice",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/187"
+          },
+          {
+            "color": "0e8a16",
+            "description": "",
+            "exclusive": false,
+            "id": 185,
+            "is_archived": false,
+            "name": "ui",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/185"
+          }
+        ]
+      },
+      "simulator_error": null,
+      "simulator_response": {
+        "assignees": [],
+        "body": "synthetic second issue",
+        "closed_at": null,
+        "created_at": "2000-01-01T00:00:00Z",
+        "labels": [
+          {
+            "color": "778899",
+            "name": "p2-eval-twice"
+          }
+        ],
+        "number": 2,
+        "state": "open",
+        "title": "issue-two",
+        "updated_at": "2000-01-01T00:00:00Z",
+        "url": "/repos/spec-repo/issues/2"
+      },
+      "simulator_state": {
+        "issues": [
+          {
+            "assignees": [],
+            "body": "synthetic first issue",
+            "closed_at": null,
+            "created_at": "2000-01-01T00:00:00Z",
+            "labels": [
+              {
+                "color": "d73a4a",
+                "name": "bug"
+              }
+            ],
+            "number": 1,
+            "state": "open",
+            "title": "issue-one",
+            "updated_at": "2000-01-01T00:00:00Z",
+            "url": "/repos/spec-repo/issues/1"
+          },
+          {
+            "assignees": [],
+            "body": "synthetic second issue",
+            "closed_at": null,
+            "created_at": "2000-01-01T00:00:00Z",
+            "labels": [
+              {
+                "color": "778899",
+                "name": "p2-eval-twice"
+              }
+            ],
+            "number": 2,
+            "state": "open",
+            "title": "issue-two",
+            "updated_at": "2000-01-01T00:00:00Z",
+            "url": "/repos/spec-repo/issues/2"
+          }
+        ],
+        "labels": [
+          {
+            "color": "d73a4a",
+            "name": "bug"
+          },
+          {
+            "color": "0e8a16",
+            "name": "ui"
+          },
+          {
+            "color": "6f42c1",
+            "name": "api"
+          },
+          {
+            "color": "778899",
+            "name": "p2-eval-twice"
+          }
+        ]
+      }
+    },
+    {
+      "action": {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "2"
+        ],
+        "op": "get_issue"
+      },
+      "reference_error": null,
+      "reference_response": {
+        "assets": [],
+        "assignee": null,
+        "assignees": null,
+        "body": "synthetic second issue",
+        "closed_at": null,
+        "comments": 0,
+        "created_at": "2026-09-22T18:26:40Z",
+        "due_date": null,
+        "html_url": "http://127.0.0.1:13002/rbadmin/spec-repo/issues/2",
+        "id": 120,
+        "is_locked": false,
+        "labels": [
+          {
+            "color": "778899",
+            "description": "",
+            "exclusive": false,
+            "id": 187,
+            "is_archived": false,
+            "name": "p2-eval-twice",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/187"
+          }
+        ],
+        "milestone": null,
+        "number": 2,
+        "original_author": "",
+        "original_author_id": 0,
+        "pin_order": 0,
+        "pull_request": null,
+        "ref": "",
+        "repository": {
+          "full_name": "rbadmin/spec-repo",
+          "id": 58,
+          "name": "spec-repo",
+          "owner": "rbadmin"
+        },
+        "state": "open",
+        "title": "issue-two",
+        "updated_at": "2026-09-22T18:26:40Z",
+        "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/issues/2",
+        "user": {
+          "active": true,
+          "avatar_url": "http://127.0.0.1:13002/avatars/ff2030324e333a44f868b1dcaad49246",
+          "created": "2026-09-22T18:26:30Z",
+          "description": "",
+          "email": "rbadmin@example.invalid",
+          "followers_count": 0,
+          "following_count": 0,
+          "full_name": "",
+          "html_url": "http://127.0.0.1:13002/rbadmin",
+          "id": 1,
+          "is_admin": true,
+          "language": "",
+          "last_login": "1970-01-01T00:00:00Z",
+          "location": "",
+          "login": "rbadmin",
+          "login_name": "",
+          "prohibit_login": false,
+          "restricted": false,
+          "source_id": 0,
+          "starred_repos_count": 0,
+          "username": "rbadmin",
+          "visibility": "public",
+          "website": ""
+        }
+      },
+      "reference_state": {
+        "issues": [
+          {
+            "assets": [],
+            "assignee": null,
+            "assignees": null,
+            "body": "synthetic second issue",
+            "closed_at": null,
+            "comments": 0,
+            "created_at": "2026-09-22T18:26:40Z",
+            "due_date": null,
+            "html_url": "http://127.0.0.1:13002/rbadmin/spec-repo/issues/2",
+            "id": 120,
+            "is_locked": false,
+            "labels": [
+              {
+                "color": "778899",
+                "description": "",
+                "exclusive": false,
+                "id": 187,
+                "is_archived": false,
+                "name": "p2-eval-twice",
+                "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/187"
+              }
+            ],
+            "milestone": null,
+            "number": 2,
+            "original_author": "",
+            "original_author_id": 0,
+            "pin_order": 0,
+            "pull_request": null,
+            "ref": "",
+            "repository": {
+              "full_name": "rbadmin/spec-repo",
+              "id": 58,
+              "name": "spec-repo",
+              "owner": "rbadmin"
+            },
+            "state": "open",
+            "title": "issue-two",
+            "updated_at": "2026-09-22T18:26:40Z",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/issues/2",
+            "user": {
+              "active": true,
+              "avatar_url": "http://127.0.0.1:13002/avatars/ff2030324e333a44f868b1dcaad49246",
+              "created": "2026-09-22T18:26:30Z",
+              "description": "",
+              "email": "rbadmin@example.invalid",
+              "followers_count": 0,
+              "following_count": 0,
+              "full_name": "",
+              "html_url": "http://127.0.0.1:13002/rbadmin",
+              "id": 1,
+              "is_admin": true,
+              "language": "",
+              "last_login": "1970-01-01T00:00:00Z",
+              "location": "",
+              "login": "rbadmin",
+              "login_name": "",
+              "prohibit_login": false,
+              "restricted": false,
+              "source_id": 0,
+              "starred_repos_count": 0,
+              "username": "rbadmin",
+              "visibility": "public",
+              "website": ""
+            }
+          },
+          {
+            "assets": [],
+            "assignee": null,
+            "assignees": null,
+            "body": "synthetic first issue",
+            "closed_at": null,
+            "comments": 0,
+            "created_at": "2026-09-22T18:26:40Z",
+            "due_date": null,
+            "html_url": "http://127.0.0.1:13002/rbadmin/spec-repo/issues/1",
+            "id": 119,
+            "is_locked": false,
+            "labels": [
+              {
+                "color": "d73a4a",
+                "description": "",
+                "exclusive": false,
+                "id": 184,
+                "is_archived": false,
+                "name": "bug",
+                "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/184"
+              }
+            ],
+            "milestone": null,
+            "number": 1,
+            "original_author": "",
+            "original_author_id": 0,
+            "pin_order": 0,
+            "pull_request": null,
+            "ref": "",
+            "repository": {
+              "full_name": "rbadmin/spec-repo",
+              "id": 58,
+              "name": "spec-repo",
+              "owner": "rbadmin"
+            },
+            "state": "open",
+            "title": "issue-one",
+            "updated_at": "2026-09-22T18:26:40Z",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/issues/1",
+            "user": {
+              "active": true,
+              "avatar_url": "http://127.0.0.1:13002/avatars/ff2030324e333a44f868b1dcaad49246",
+              "created": "2026-09-22T18:26:30Z",
+              "description": "",
+              "email": "rbadmin@example.invalid",
+              "followers_count": 0,
+              "following_count": 0,
+              "full_name": "",
+              "html_url": "http://127.0.0.1:13002/rbadmin",
+              "id": 1,
+              "is_admin": true,
+              "language": "",
+              "last_login": "1970-01-01T00:00:00Z",
+              "location": "",
+              "login": "rbadmin",
+              "login_name": "",
+              "prohibit_login": false,
+              "restricted": false,
+              "source_id": 0,
+              "starred_repos_count": 0,
+              "username": "rbadmin",
+              "visibility": "public",
+              "website": ""
+            }
+          }
+        ],
+        "labels": [
+          {
+            "color": "6f42c1",
+            "description": "",
+            "exclusive": false,
+            "id": 186,
+            "is_archived": false,
+            "name": "api",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/186"
+          },
+          {
+            "color": "d73a4a",
+            "description": "",
+            "exclusive": false,
+            "id": 184,
+            "is_archived": false,
+            "name": "bug",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/184"
+          },
+          {
+            "color": "778899",
+            "description": "",
+            "exclusive": false,
+            "id": 187,
+            "is_archived": false,
+            "name": "p2-eval-twice",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/187"
+          },
+          {
+            "color": "0e8a16",
+            "description": "",
+            "exclusive": false,
+            "id": 185,
+            "is_archived": false,
+            "name": "ui",
+            "url": "http://127.0.0.1:13002/api/v1/repos/rbadmin/spec-repo/labels/185"
+          }
+        ]
+      },
+      "simulator_error": null,
+      "simulator_response": {
+        "assignees": [],
+        "body": "synthetic second issue",
+        "closed_at": null,
+        "created_at": "2000-01-01T00:00:00Z",
+        "labels": [
+          {
+            "color": "778899",
+            "name": "p2-eval-twice"
+          }
+        ],
+        "number": 2,
+        "state": "open",
+        "title": "issue-two",
+        "updated_at": "2000-01-01T00:00:00Z",
+        "url": "/repos/spec-repo/issues/2"
+      },
+      "simulator_state": {
+        "issues": [
+          {
+            "assignees": [],
+            "body": "synthetic first issue",
+            "closed_at": null,
+            "created_at": "2000-01-01T00:00:00Z",
+            "labels": [
+              {
+                "color": "d73a4a",
+                "name": "bug"
+              }
+            ],
+            "number": 1,
+            "state": "open",
+            "title": "issue-one",
+            "updated_at": "2000-01-01T00:00:00Z",
+            "url": "/repos/spec-repo/issues/1"
+          },
+          {
+            "assignees": [],
+            "body": "synthetic second issue",
+            "closed_at": null,
+            "created_at": "2000-01-01T00:00:00Z",
+            "labels": [
+              {
+                "color": "778899",
+                "name": "p2-eval-twice"
+              }
+            ],
+            "number": 2,
+            "state": "open",
+            "title": "issue-two",
+            "updated_at": "2000-01-01T00:00:00Z",
+            "url": "/repos/spec-repo/issues/2"
+          }
+        ],
+        "labels": [
+          {
+            "color": "d73a4a",
+            "name": "bug"
+          },
+          {
+            "color": "0e8a16",
+            "name": "ui"
+          },
+          {
+            "color": "6f42c1",
+            "name": "api"
+          },
+          {
+            "color": "778899",
+            "name": "p2-eval-twice"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+# RealityBridge observation projection
+
+**Verification:** field shapes below were extracted from `/swagger.v1.json` served
+by the pinned reference build itself (Gitea 1.24.7), not from docs. The swagger
+stores request bodies as inline `additionalProperties` schemas, so this file
+records the *observed required fields* from the six verified operations and the
+`Issue` response object, not a guessed REST shape.
+
+## Operations in scope (verified present on the pinned build)
+
+| Op | Path | Method | Required (observed) |
+|---|---|---|---|
+| create_issue | /repos/{owner}/{repo}/issues | POST | owner, repo, title |
+| get_issue | /repos/{owner}/{repo}/issues/{index} | GET | owner, repo, index |
+| edit_issue | /repos/{owner}/{repo}/issues/{index} | PATCH | owner, repo, index |
+| add_label_to_issue | /repos/{owner}/{repo}/issues/{index}/labels | POST | owner, repo, index, id/labels |
+| remove_label_from_issue | /repos/{owner}/{repo}/issues/{index}/labels/{id} | DELETE | owner, repo, index, id |
+| create_label | /repos/{owner}/{repo}/labels | POST | owner, repo, name, color |
+
+## Projection mapping: raw → observed
+
+An `Observation` is a normalized, comparison-stable record of what the reference
+did. Raw fields below are from the `Issue` response object; each is mapped to a
+stable semantic fields rather than raw database IDs.
+
+### Identifier handling
+
+- Raw `id` is excluded. The current bounded seed compares the stable
+  human-facing issue `number` plus semantic fields (`title`, `body`, state,
+  labels, assignees). Dynamic logical-ID mapping across independently drifting
+  creation histories is not implemented.
+- `issue_state`: the lower-cased response value remains observable. Unknown
+  states are not coerced to `closed`.
+- `label_set`: unordered set of `{name, color}` pairs, sorted for comparison
+  (permitted by the API contract: label order on an issue is not meaningful).
+
+### Values that remain observable (never normalized away)
+
+- `number` — the issue number is stable and meaningful (it is the human-facing
+  id and is required by `get_issue`/`edit_issue`).
+- `title`, `body` — content, verbatim.
+- `state` — lifecycle state.
+- `labels` — the label set on the issue.
+- `assignees` — list of assignee logins, sorted (assignment is a set in effect).
+- `created_at` / `updated_at` — the relation `updated_at >= created_at` is
+  compared when the pair is present. Missing, incomplete, or unparseable pairs
+  remain distinguishable from a valid relation.
+- `closed_at` — presence is compared alongside state. Exact time is excluded.
+  Cross-object creation windows and expiry/order semantics are not implemented.
+
+### Exclusions (documented; these are the things comparison deliberately blind)
+
+- Raw `id` values.
+- Exact timestamp values (the implemented relation and presence flags remain).
+- `comments` counters (a comment op is out of scope; both sides get 0).
+- `html_url`, `url`, `repository`, `pin_order`, `original_author*`, `ref` —
+  environment/transport artifacts, not action semantics.
+- `milestone`, `due_date` — no milestone ops in scope.
+
+## Error taxonomy (preserved as distinct categories)
+
+| Error | Semantics (distinct, never merged) |
+|---|---|
+| `permission_denied` | 403: wrong principal / permission boundary |
+| `not_found` | 404: object absent |
+| `validation_conflict` | 422: rejected input (bad state transition, bad label/id) |
+| `transport_uncertain` | network/timeout, resets, undetermined |
+
+The projection must report which category occurred; the differential test MUST
+treat these as distinct — a 403 where the simulator returned a 404 is a
+divergence by itself.

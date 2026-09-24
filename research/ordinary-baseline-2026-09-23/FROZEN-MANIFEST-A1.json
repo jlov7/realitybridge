@@ -1,0 +1,33 @@
+{
+  "first_attempt_sha256": "b7f68cff674ddf6de226ea8a2c3b2e6189c824121a1d6dd227a36cfc73f1cc30",
+  "measured_emulator_sha256": "61b81d7b4f5c97a1116855fbb93c422d772d9342c5503c1f84b7bd659f3c02ac",
+  "note": "Amendment 1 after setup-only failure; archive exact reviewed commit, then materialize only emulator.py measured bytes.",
+  "source_commit_before_manifest": "5500c0352e7e2022c46e056a95613b8eb44cb9ed",
+  "source_sha256": {
+    "contracts/observation.yaml": "14701b0db889e274f624ce1a71c816dc9ba862a2cc28123ec4a86c2e67a9c0fc",
+    "contracts/operations.yaml": "7564aac931eea13f5babc5de1ab5aff5acd96f6e2fc4641f74b1ed1a9015f822",
+    "experiments/materialize_research_baseline.py": "bf042a6878c25e151383dde7e38d137da1ac3f0ab8dd018a7799eead0f87c227",
+    "experiments/ordinary_baseline.py": "b520b7c27ff572f66f842b054b9beb2462414e3f019736d6a5c94e7969cc2f15",
+    "experiments/ordinary_baseline_cases.py": "dab88dddbebb3c138890520fca25f651a10b2bc244a20ddc17ead6addb89429d",
+    "experiments/ordinary_baseline_study.py": "f6e7697afcd11c4a8ea9727646522bd504a32f1b4f74c682f8537b4002575226",
+    "experiments/prepare_ordinary_study.py": "b0a7af21cd76415d66f6338d719401341810f4ebb7e50e7774d158906a172339",
+    "experiments/prospective_cases.py": "23231fb175ff78dfe05a96ccbc812de5da88ddbbc81f9c3e7e671f77ca4c4d7a",
+    "experiments/reproduce_research_completion.py": "4a4e4aaca483a36ade9fa0dcb610e3132e5819b7a1eced6425bc0d3caae3c4d0",
+    "experiments/research_completion.py": "5c5c4c1d138511d6b7126d3e8d48104397db53b86b0d65526787c61583ece2d3",
+    "experiments/sandbox_repair_worker.c": "3691921eebde1997074e7469f83cc34a2def499bf5900288db548dd0ffdc35eb",
+    "reference/compose.yaml": "aafbc55dc918acaff6d81d25c3adf50b39fa684d17ccd21a425ab46ae2eade5e",
+    "reference/owned_lifecycle.py": "2f72f6e157b9853d647442caaeb3e48b06cc1da85de8e8d1a7ecae6290eb898c",
+    "reference/seed.py": "a762b02850056cac3eb784a082b79e55d048672f4df26b6573e5e1565ad63389",
+    "research/ordinary-baseline-2026-09-23/AMENDMENT-1.md": "c268ca220574d4a221572eb5e438a139305915401c2d4b6b7588b1f87027f3a0",
+    "research/ordinary-baseline-2026-09-23/FROZEN-MANIFEST.json": "2223692630f2f28c4588c50c98c5c388c15a63a1f75586678ba6d2170914967c",
+    "research/ordinary-baseline-2026-09-23/PROTOCOL.md": "56950f8c824fd968495850dfe7728e0b41b704b4dac0bdda7178c354d7bb75a7",
+    "src/reality_bridge/differential.py": "6dca49492c3c21ffef9b36dd8af158b9bc95727adb23228a8a8fc7ddaf4bb409",
+    "src/reality_bridge/emulator.py": "602693308d0996a51edcbc18d6f0fceb48f43f511da3fecb4a4c959334d1eb10",
+    "src/reality_bridge/projection.py": "7df247c3dc8652242bbd3a58011cc3861422cc2256b32d34f1382c0018e58664",
+    "src/reality_bridge/prospective_comparison.py": "1a3933e13a2e7efe362eb97dccc088bef0d69541b174e277b255d589aec8d319",
+    "src/reality_bridge/reference.py": "9a9da943960cff233863f603bf54fe15276882b6d85346f71be56f7419819d51",
+    "src/reality_bridge/repair.py": "5241e24cb92e5644956eaa581bb116c553a7b74fec797f75acfdc58ca9c1688e",
+    "src/reality_bridge/repair_sandbox.py": "9c9900fa9c8cd942079d0bc6ffa1172d7be2a95512cf86a1b18c9cd8fe3b5852",
+    "src/reality_bridge/state_oracle.py": "5c68518742ce7a8fac518b95c770b03dbe08dcc7f8d5baaff6bacfbf93634e9b"
+  }
+}

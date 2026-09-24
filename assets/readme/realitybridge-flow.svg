@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 600" role="img" aria-labelledby="title desc">
+  <title id="title">RealityBridge comparison path</title>
+  <desc id="desc">A six-operation action sequence reaches a pinned Gitea reference and a simulator in parallel. Each provides a response and a separate state observation. A four-outcome comparator records the case and receipt.</desc>
+  <rect x="1" y="1" width="1118" height="598" rx="24" fill="#101B24" stroke="#334959" stroke-width="2"/>
+  <text x="30" y="45" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">Look beyond the reply</text>
+  <text x="30" y="72" fill="#BBD0DA" font-family="Arial, Helvetica, sans-serif" font-size="16">One case · two implementations · response and state observed separately</text>
+
+  <rect x="30" y="92" width="1060" height="76" rx="14" fill="#1E3443" stroke="#6F95A6" stroke-width="2"/>
+  <text x="52" y="123" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700">01  Six-operation action sequence</text>
+  <text x="52" y="149" fill="#C9D7DD" font-family="Arial, Helvetica, sans-serif" font-size="16">Create, get or edit an issue; add, remove or create a label. Both implementations receive the same actions.</text>
+  <path d="M560 168v24H285v19m275-19h275v19" fill="none" stroke="#95ADBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m280 204 5 7 5-7m540 0 5 7 5-7" fill="none" stroke="#95ADBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="30" y="211" width="510" height="164" rx="14" fill="#123A44" stroke="#47D4DF" stroke-width="2"/>
+  <text x="52" y="247" fill="#83EDF1" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">02  Pinned Gitea reference</text>
+  <text x="52" y="278" fill="#E6F5F5" font-family="Arial, Helvetica, sans-serif" font-size="16">Loopback API · metered requests</text>
+  <path d="M52 296h466" stroke="#49717C" stroke-width="1"/>
+  <text x="52" y="324" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="17">Action response</text>
+  <text x="52" y="352" fill="#D1E8EA" font-family="Arial, Helvetica, sans-serif" font-size="16">Separate issue, label and membership readback</text>
+
+  <rect x="580" y="211" width="510" height="164" rx="14" fill="#453323" stroke="#F9BA64" stroke-width="2"/>
+  <text x="602" y="247" fill="#FFD294" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">02  Simulator</text>
+  <text x="602" y="278" fill="#FFF0D8" font-family="Arial, Helvetica, sans-serif" font-size="16">Local transitions · measured source pinned</text>
+  <path d="M602 296h466" stroke="#816244" stroke-width="1"/>
+  <text x="602" y="324" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="17">Action response</text>
+  <text x="602" y="352" fill="#F0DCC4" font-family="Arial, Helvetica, sans-serif" font-size="16">Separate issue, label and membership export</text>
+
+  <path d="M285 375v24h275m275-24v24H560v20" fill="none" stroke="#95ADBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m555 412 5 7 5-7" fill="none" stroke="#95ADBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="30" y="419" width="670" height="143" rx="14" fill="#263342" stroke="#9EB5C5" stroke-width="2"/>
+  <text x="52" y="456" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">03  Compare declared observations</text>
+  <text x="52" y="487" fill="#D4E0E6" font-family="Arial, Helvetica, sans-serif" font-size="16">Keep duplicate rows and meaningful identities visible</text>
+  <text x="52" y="523" fill="#83EDF1" font-family="Arial, Helvetica, sans-serif" font-size="17">agree · diverge</text>
+  <text x="230" y="523" fill="#FFD294" font-family="Arial, Helvetica, sans-serif" font-size="17">undetermined · unsupported</text>
+  <path d="M700 490h34" stroke="#95ADBA" stroke-width="3" stroke-linecap="round"/>
+  <path d="m727 485 7 5-7 5" fill="none" stroke="#95ADBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="734" y="419" width="356" height="143" rx="14" fill="#1E3443" stroke="#6F95A6" stroke-width="2"/>
+  <text x="756" y="456" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">04  Retain evidence</text>
+  <text x="756" y="487" fill="#D4E0E6" font-family="Arial, Helvetica, sans-serif" font-size="16">Reason · raw observations</text>
+  <text x="756" y="513" fill="#D4E0E6" font-family="Arial, Helvetica, sans-serif" font-size="16">Request count · source identity</text>
+  <text x="756" y="542" fill="#BBD0DA" font-family="Arial, Helvetica, sans-serif" font-size="14">Offline replay makes no new Gitea calls</text>
+</svg>

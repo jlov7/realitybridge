@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 1090" role="img" aria-labelledby="title desc">
+  <title id="title">RealityBridge comparison path on narrow screens</title>
+  <desc id="desc">The same six-operation sequence runs on a pinned Gitea reference and a simulator. Their action responses and separate state observations reach a comparator, which retains a four-outcome verdict and receipt.</desc>
+  <rect x="1" y="1" width="358" height="1088" rx="20" fill="#101B24" stroke="#334959" stroke-width="2"/>
+  <text x="20" y="42" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Look beyond the reply</text>
+  <text x="20" y="68" fill="#BBD0DA" font-family="Arial, Helvetica, sans-serif" font-size="13">One case · two implementations</text>
+
+  <rect x="20" y="94" width="320" height="86" rx="12" fill="#1E3443" stroke="#6F95A6" stroke-width="2"/>
+  <text x="36" y="124" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">01  Action sequence</text>
+  <text x="36" y="148" fill="#C9D7DD" font-family="Arial, Helvetica, sans-serif" font-size="13">Six issue and label operations</text>
+  <text x="36" y="166" fill="#C9D7DD" font-family="Arial, Helvetica, sans-serif" font-size="13">sent to both implementations</text>
+  <path d="M180 180v13H10v187m0-125h10m-10 125h10" fill="none" stroke="#95ADBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m13 250 7 5-7 5m0 115 7 5-7 5" fill="none" stroke="#95ADBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="20" y="205" width="320" height="100" rx="12" fill="#123A44" stroke="#47D4DF" stroke-width="2"/>
+  <text x="36" y="235" fill="#83EDF1" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">02  Pinned Gitea reference</text>
+  <text x="36" y="261" fill="#E6F5F5" font-family="Arial, Helvetica, sans-serif" font-size="13">Loopback API · metered requests</text>
+  <text x="36" y="282" fill="#BCD8DC" font-family="Arial, Helvetica, sans-serif" font-size="13">Response and separate state readback</text>
+
+
+  <rect x="20" y="330" width="320" height="100" rx="12" fill="#453323" stroke="#F9BA64" stroke-width="2"/>
+  <text x="36" y="360" fill="#FFD294" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">02  Simulator</text>
+  <text x="36" y="386" fill="#FFF0D8" font-family="Arial, Helvetica, sans-serif" font-size="13">Local transitions · measured source</text>
+  <text x="36" y="407" fill="#DFC6A5" font-family="Arial, Helvetica, sans-serif" font-size="13">Response and separate state export</text>
+  <path d="M340 255h10v190H180v10m160-75h10" fill="none" stroke="#95ADBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m175 448 5 7 5-7" fill="none" stroke="#95ADBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="20" y="455" width="320" height="141" rx="12" fill="#263342" stroke="#9EB5C5" stroke-width="2"/>
+  <text x="36" y="485" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">03  Compare observations</text>
+  <text x="36" y="513" fill="#D4E0E6" font-family="Arial, Helvetica, sans-serif" font-size="13">Responses plus issue, label and</text>
+  <text x="36" y="533" fill="#D4E0E6" font-family="Arial, Helvetica, sans-serif" font-size="13">membership state after each action</text>
+  <text x="36" y="558" fill="#83EDF1" font-family="Arial, Helvetica, sans-serif" font-size="13">agree · diverge</text>
+  <text x="36" y="579" fill="#FFD294" font-family="Arial, Helvetica, sans-serif" font-size="13">undetermined · unsupported</text>
+  <path d="M180 596v25" stroke="#95ADBA" stroke-width="3" stroke-linecap="round"/>
+  <path d="m175 614 5 7 5-7" fill="none" stroke="#95ADBA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="20" y="621" width="320" height="123" rx="12" fill="#1E3443" stroke="#6F95A6" stroke-width="2"/>
+  <text x="36" y="651" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">04  Retain evidence</text>
+  <text x="36" y="678" fill="#D4E0E6" font-family="Arial, Helvetica, sans-serif" font-size="13">Case, reason and raw observations</text>
+  <text x="36" y="700" fill="#D4E0E6" font-family="Arial, Helvetica, sans-serif" font-size="13">Request count and source identity</text>
+  <text x="36" y="724" fill="#BBD0DA" font-family="Arial, Helvetica, sans-serif" font-size="12">Offline replay uses saved data</text>
+
+  <rect x="20" y="770" width="320" height="282" rx="12" fill="#172730" stroke="#4C6978" stroke-width="2"/>
+  <text x="36" y="804" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">Why state matters: E06</text>
+  <text x="36" y="835" fill="#D4E0E6" font-family="Arial, Helvetica, sans-serif" font-size="13">Two labels were created with</text>
+  <text x="36" y="854" fill="#D4E0E6" font-family="Arial, Helvetica, sans-serif" font-size="13">the same name.</text>
+  <text x="36" y="889" fill="#83EDF1" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Reference:</text>
+  <text x="36" y="909" fill="#D4E0E6" font-family="Arial, Helvetica, sans-serif" font-size="13">two rows; original issue link kept</text>
+  <text x="36" y="943" fill="#FFD294" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Measured simulator:</text>
+  <text x="36" y="963" fill="#D4E0E6" font-family="Arial, Helvetica, sans-serif" font-size="13">name-keyed row overwritten</text>
+  <text x="36" y="1001" fill="#F5F7F7" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700">Responses agreed; state diverged.</text>
+</svg>

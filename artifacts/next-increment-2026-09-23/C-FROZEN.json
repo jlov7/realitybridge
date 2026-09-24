@@ -1,0 +1,300 @@
+{
+  "arms": {
+    "ordinary": [
+      {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "c-ordinary"
+            ],
+            "op": "create_issue"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "3"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "O01"
+      },
+      {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "closed"
+            ],
+            "op": "edit_issue"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "O02"
+      },
+      {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "c-dupe",
+              "112233"
+            ],
+            "op": "create_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "c-dupe",
+              "112233"
+            ],
+            "op": "create_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "c-dupe"
+            ],
+            "op": "add_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "c-dupe"
+            ],
+            "op": "remove_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "O03"
+      },
+      {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "ui"
+            ],
+            "op": "add_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "ui"
+            ],
+            "op": "remove_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "O04"
+      }
+    ],
+    "realitybridge": [
+      {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "c-dupe",
+              "112233"
+            ],
+            "op": "create_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "c-dupe",
+              "112233"
+            ],
+            "op": "create_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "c-dupe"
+            ],
+            "op": "add_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "c-dupe"
+            ],
+            "op": "remove_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "R01"
+      },
+      {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "c-target"
+            ],
+            "op": "create_issue"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "3",
+              "closed"
+            ],
+            "op": "edit_issue"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "3"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "R02"
+      },
+      {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "1",
+              "bug"
+            ],
+            "op": "remove_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "1",
+              "bug"
+            ],
+            "op": "remove_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "1"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "R03"
+      },
+      {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "1",
+              "closed"
+            ],
+            "op": "edit_issue"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "1",
+              "open"
+            ],
+            "op": "edit_issue"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "1"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "R04"
+      }
+    ]
+  },
+  "author_time": "unavailable",
+  "claim": "AI authored equal-request-budget feasibility only; no superiority or matched human effort claim",
+  "families": [
+    "created_title",
+    "ignored_close",
+    "remove_every_duplicate"
+  ],
+  "generation_procedures": {
+    "ordinary": "AI authored systematic normal operation coverage for all six operations plus duplicate row and repeat actions",
+    "realitybridge": "AI authored boundary sequences prioritizing duplicate row, chained lifecycle, repeat removal and state readback"
+  },
+  "hard_request_cap_per_arm": 320,
+  "independent_human_adjudication": "unavailable",
+  "protocol_sha256": "df343372c01d632ddff14e58b6bfc237fc2e74779562d96132f1c5823b758a05",
+  "runtime_commit": "b884112c1de9bd2ec3a9032d9f9865bd225ff3fc",
+  "seed": null,
+  "shared_setup_cap": 20,
+  "source_sha256": {
+    "experiments/equal_request_feasibility.py": "619c9e701b599851812d00251b4be5a8d598627b40488307e032e23a836943c0",
+    "experiments/ordinary_baseline.py": "b520b7c27ff572f66f842b054b9beb2462414e3f019736d6a5c94e7969cc2f15",
+    "experiments/ordinary_baseline_study.py": "f6e7697afcd11c4a8ea9727646522bd504a32f1b4f74c682f8537b4002575226",
+    "experiments/research_completion.py": "2e5a4bf4118551ee4ec962877a1e2ec5cb9a2bc8ded137df2b811c6861b3401d",
+    "reference/compose.yaml": "aafbc55dc918acaff6d81d25c3adf50b39fa684d17ccd21a425ab46ae2eade5e",
+    "reference/owned_lifecycle.py": "2f72f6e157b9853d647442caaeb3e48b06cc1da85de8e8d1a7ecae6290eb898c",
+    "src/reality_bridge/emulator.py": "1a0af39cd058423ebde065d656e322db57cd8f6296ae9f9a4e919bc0a14de6c6",
+    "src/reality_bridge/reference.py": "9a9da943960cff233863f603bf54fe15276882b6d85346f71be56f7419819d51",
+    "src/reality_bridge/state_oracle.py": "6b31879545303e9584822b65c9006f69f31adc99988d521f2ae4a84d71d3a3fc"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "arm_files": {
+    "random_20260922": "466d845a51c02b28b55cdb8d2dafbb0bb252f5fc98d5fbd227b1512775d35fe6",
+    "random_20260923": "b5d2f9854dad78dd6d104179efa9284f4d53c5c86f37419f5176a29b97ddd131",
+    "random_20260924": "138b58d9aaac37244872062b014e2d31eb1367aabc7726d6a5f6e017b95655ad",
+    "targeted": "981a4e1fce6423302be5dd14ae160f869fafef932759302028f617d8561bfb88"
+  },
+  "case_sha256": "3d286c5707f1f560fbf06d6e2c4666742c1b62102ff5af1629162d2b5650fe60",
+  "rules": [
+    {
+      "evidence": "paired values differ only by a simulator leading hash",
+      "field": "label.color",
+      "transform": "strip_leading_hash"
+    }
+  ]
+}

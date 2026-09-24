@@ -1,0 +1,7 @@
+[
+  {"step":"compose-config","exit_code":0,"elapsed_seconds":0.18},
+  {"step":"live-tests","exit_code":0,"elapsed_seconds":36.31,"result":"3 passed in 36.10s"},
+  {"step":"frozen-comparison","exit_code":0,"elapsed_seconds":5.12,"result":"4 agree, 26 diverge, 282 HTTP requests"},
+  {"step":"repair-demo","exit_code":0,"elapsed_seconds":1.75,"result":"pre diverge, post agree, regression agree, verified"},
+  {"step":"cleanup","exit_code":0,"elapsed_seconds":1.43,"result":"isolated containers, volumes, and network removed"}
+]

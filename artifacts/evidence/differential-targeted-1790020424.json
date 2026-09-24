@@ -1,0 +1,418 @@
+{
+  "seed": 11,
+  "max_len": 5,
+  "count": 5,
+  "rows": [
+    {
+      "sequence_index": 0,
+      "steps": [
+        {
+          "action": {
+            "op": "edit_issue",
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "999",
+              "closed"
+            ]
+          },
+          "ref_status": 404,
+          "emu_status": 404,
+          "outcome": "agree",
+          "reason": "",
+          "evidence": ""
+        },
+        {
+          "action": {
+            "op": "edit_issue",
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "999",
+              "closed"
+            ]
+          },
+          "ref_status": 404,
+          "emu_status": 404,
+          "outcome": "agree",
+          "reason": "",
+          "evidence": ""
+        },
+        {
+          "action": {
+            "op": "add_label",
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "1",
+              "nonexistent-label"
+            ]
+          },
+          "ref_status": 200,
+          "emu_status": 404,
+          "outcome": "diverge",
+          "reason": "error category differs",
+          "evidence": "ref=None sim=not_found (ref detail: '')"
+        }
+      ],
+      "divergence": {
+        "at_step": 2,
+        "action": {
+          "op": "add_label",
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "1",
+            "nonexistent-label"
+          ]
+        },
+        "ref": [
+          {
+            "id": 95,
+            "name": "bug",
+            "exclusive": false,
+            "is_archived": false,
+            "color": "d73a4a",
+            "description": "",
+            "url": "http://127.0.0.1:13000/api/v1/repos/rbadmin/spec-repo/labels/95"
+          }
+        ],
+        "emu": "err:404",
+        "diff": "ref=None sim=not_found (ref detail: '')"
+      },
+      "minimal_prefix": [
+        {
+          "op": "edit_issue",
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "999",
+            "closed"
+          ]
+        },
+        {
+          "op": "edit_issue",
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "999",
+            "closed"
+          ]
+        },
+        {
+          "op": "add_label",
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "1",
+            "nonexistent-label"
+          ]
+        }
+      ]
+    },
+    {
+      "sequence_index": 1,
+      "steps": [
+        {
+          "action": {
+            "op": "create_issue",
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              ""
+            ]
+          },
+          "ref_status": 422,
+          "emu_status": 422,
+          "outcome": "agree",
+          "reason": "",
+          "evidence": ""
+        },
+        {
+          "action": {
+            "op": "edit_issue",
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "999",
+              "closed"
+            ]
+          },
+          "ref_status": 404,
+          "emu_status": 404,
+          "outcome": "agree",
+          "reason": "",
+          "evidence": ""
+        },
+        {
+          "action": {
+            "op": "add_label",
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "1",
+              "nonexistent-label"
+            ]
+          },
+          "ref_status": 200,
+          "emu_status": 404,
+          "outcome": "diverge",
+          "reason": "error category differs",
+          "evidence": "ref=None sim=not_found (ref detail: '')"
+        }
+      ],
+      "divergence": {
+        "at_step": 2,
+        "action": {
+          "op": "add_label",
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "1",
+            "nonexistent-label"
+          ]
+        },
+        "ref": [
+          {
+            "id": 101,
+            "name": "bug",
+            "exclusive": false,
+            "is_archived": false,
+            "color": "d73a4a",
+            "description": "",
+            "url": "http://127.0.0.1:13000/api/v1/repos/rbadmin/spec-repo/labels/101"
+          }
+        ],
+        "emu": "err:404",
+        "diff": "ref=None sim=not_found (ref detail: '')"
+      },
+      "minimal_prefix": [
+        {
+          "op": "create_issue",
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            ""
+          ]
+        },
+        {
+          "op": "edit_issue",
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "999",
+            "closed"
+          ]
+        },
+        {
+          "op": "add_label",
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "1",
+            "nonexistent-label"
+          ]
+        }
+      ]
+    },
+    {
+      "sequence_index": 2,
+      "steps": [
+        {
+          "action": {
+            "op": "edit_issue",
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "1",
+              "open"
+            ]
+          },
+          "ref_status": 200,
+          "emu_status": 200,
+          "outcome": "diverge",
+          "reason": "issue fields differ",
+          "evidence": "labels: ref=(('bug', 'd73a4a'),) sim=(('bug', '#d73a4a'),)"
+        }
+      ],
+      "divergence": {
+        "at_step": 0,
+        "action": {
+          "op": "edit_issue",
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "1",
+            "open"
+          ]
+        },
+        "ref": {
+          "id": 76,
+          "url": "http://127.0.0.1:13000/api/v1/repos/rbadmin/spec-repo/issues/1",
+          "html_url": "http://127.0.0.1:13000/rbadmin/spec-repo/issues/1",
+          "number": 1,
+          "user": {
+            "id": 1,
+            "login": "rbadmin",
+            "login_name": "",
+            "source_id": 0,
+            "full_name": "",
+            "email": "rbadmin@example.invalid",
+            "avatar_url": "http://127.0.0.1:13000/avatars/ff2030324e333a44f868b1dcaad49246",
+            "html_url": "http://127.0.0.1:13000/rbadmin",
+            "language": "",
+            "is_admin": true,
+            "last_login": "1970-01-01T00:00:00Z",
+            "created": "2026-09-21T19:47:41Z",
+            "restricted": false,
+            "active": true,
+            "prohibit_login": false,
+            "location": "",
+            "website": "",
+            "description": "",
+            "visibility": "public",
+            "followers_count": 0,
+            "following_count": 0,
+            "starred_repos_count": 0,
+            "username": "rbadmin"
+          },
+          "original_author": "",
+          "original_author_id": 0,
+          "title": "issue-one",
+          "body": "synthetic first issue",
+          "ref": "",
+          "assets": [],
+          "labels": [
+            {
+              "id": 107,
+              "name": "bug",
+              "exclusive": false,
+              "is_archived": false,
+              "color": "d73a4a",
+              "description": "",
+              "url": "http://127.0.0.1:13000/api/v1/repos/rbadmin/spec-repo/labels/107"
+            }
+          ],
+          "milestone": null,
+          "assignee": null,
+          "assignees": null,
+          "state": "open",
+          "is_locked": false,
+          "comments": 0,
+          "created_at": "2026-09-21T19:53:44Z",
+          "updated_at": "2026-09-21T19:53:44Z",
+          "closed_at": null,
+          "due_date": null,
+          "pull_request": null,
+          "repository": {
+            "id": 35,
+            "name": "spec-repo",
+            "owner": "rbadmin",
+            "full_name": "rbadmin/spec-repo"
+          },
+          "pin_order": 0
+        },
+        "emu": {
+          "number": 1,
+          "title": "issue-one",
+          "body": "synthetic first issue",
+          "state": "open",
+          "closed_at": null,
+          "labels": [
+            {
+              "name": "bug",
+              "color": "#d73a4a"
+            }
+          ],
+          "assignees": [],
+          "url": "/repos/spec-repo/issues/1"
+        },
+        "diff": "labels: ref=(('bug', 'd73a4a'),) sim=(('bug', '#d73a4a'),)"
+      },
+      "minimal_prefix": [
+        {
+          "op": "edit_issue",
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "1",
+            "open"
+          ]
+        }
+      ]
+    },
+    {
+      "sequence_index": 3,
+      "steps": [
+        {
+          "action": {
+            "op": "create_issue",
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              ""
+            ]
+          },
+          "ref_status": 422,
+          "emu_status": 422,
+          "outcome": "agree",
+          "reason": "",
+          "evidence": ""
+        }
+      ]
+    },
+    {
+      "sequence_index": 4,
+      "steps": [
+        {
+          "action": {
+            "op": "get_issue",
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "999"
+            ]
+          },
+          "ref_status": 404,
+          "emu_status": 404,
+          "outcome": "agree",
+          "reason": "",
+          "evidence": ""
+        },
+        {
+          "action": {
+            "op": "remove_label",
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "3",
+              "api"
+            ]
+          },
+          "ref_status": 404,
+          "emu_status": 404,
+          "outcome": "agree",
+          "reason": "",
+          "evidence": ""
+        },
+        {
+          "action": {
+            "op": "get_issue",
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "999"
+            ]
+          },
+          "ref_status": 404,
+          "emu_status": 404,
+          "outcome": "agree",
+          "reason": "",
+          "evidence": ""
+        }
+      ]
+    }
+  ],
+  "arm": "targeted",
+  "elapsed_s": 0.92
+}

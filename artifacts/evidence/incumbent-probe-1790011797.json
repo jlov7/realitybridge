@@ -1,0 +1,51 @@
+[
+  {
+    "case": "C1 wrong-object (title differs)",
+    "ref_state": "open",
+    "sim_state": "open",
+    "incumbent": "diverge(fields=['title'])",
+    "instrument": "diverge(issue fields differ)"
+  },
+  {
+    "case": "C2 literal-id drift (semantically identical)",
+    "ref_state": "open",
+    "sim_state": "open",
+    "incumbent": "diverge(fields=['id'])",
+    "instrument": "agree"
+  },
+  {
+    "case": "C3 state transition (closed vs open)",
+    "ref_state": "closed",
+    "sim_state": "open",
+    "incumbent": "diverge(fields=['state'])",
+    "instrument": "diverge(issue fields differ)"
+  },
+  {
+    "case": "C4 label-set order (equal members)",
+    "ref_state": "open",
+    "sim_state": "open",
+    "incumbent": "diverge(fields=['labels'])",
+    "instrument": "agree"
+  },
+  {
+    "case": "C5 duplicate effect (ref=1 row, sim=2 rows)",
+    "ref_state": "open",
+    "sim_state": "open",
+    "incumbent": "agree",
+    "instrument": "agree"
+  },
+  {
+    "case": "C6 permission vs not-found (taxonomy)",
+    "ref_state": "open",
+    "sim_state": "open",
+    "incumbent": "diverge(raw: 403 vs 404) \u2014 only if status is not coarsened",
+    "instrument": "diverge(error category differs)"
+  },
+  {
+    "case": "C7 identical",
+    "ref_state": "open",
+    "sim_state": "open",
+    "incumbent": "agree",
+    "instrument": "agree"
+  }
+]

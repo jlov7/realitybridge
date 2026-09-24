@@ -1,0 +1,250 @@
+{
+  "families": {
+    "color_hash_leak": {
+      "known_regression": {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "e-color-bare",
+              "445566"
+            ],
+            "op": "create_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "ui"
+            ],
+            "op": "add_label"
+          }
+        ],
+        "id": "EC-K"
+      },
+      "train": {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "e-color-train",
+              "#123abc"
+            ],
+            "op": "create_label"
+          }
+        ],
+        "id": "EC-T"
+      },
+      "unseen": {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "e-color-unseen",
+              "#abc123"
+            ],
+            "op": "create_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "e-color-unseen"
+            ],
+            "op": "add_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "EC-U"
+      }
+    },
+    "duplicate_row_overwrite": {
+      "known_regression": {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "e-fresh",
+              "445566"
+            ],
+            "op": "create_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "e-fresh"
+            ],
+            "op": "add_label"
+          }
+        ],
+        "id": "ED-K"
+      },
+      "train": {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "bug",
+              "112233"
+            ],
+            "op": "create_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "1"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "ED-T"
+      },
+      "unseen": {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "e-dupe",
+              "aa0000"
+            ],
+            "op": "create_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "e-dupe",
+              "bb0000"
+            ],
+            "op": "create_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "e-dupe"
+            ],
+            "op": "add_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "ED-U"
+      }
+    },
+    "unknown_add_error": {
+      "known_regression": {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "ui"
+            ],
+            "op": "add_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "EU-K"
+      },
+      "train": {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "e-unknown-a"
+            ],
+            "op": "add_label"
+          }
+        ],
+        "id": "EU-T"
+      },
+      "unseen": {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2"
+            ],
+            "op": "get_issue"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2",
+              "e-unknown-b"
+            ],
+            "op": "add_label"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "2"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "id": "EU-U"
+      }
+    }
+  },
+  "forbidden_eval_path": "research/next-increment-2026-09-23/E-EVAL-CASES.json",
+  "hard_request_cap": 300,
+  "known_regressions": "one frozen nonempty case per family",
+  "one_attempt_per_family": true,
+  "protocol_sha256": "df343372c01d632ddff14e58b6bfc237fc2e74779562d96132f1c5823b758a05",
+  "runtime_commit": "48fbc6db1f6f66c0d85ed7aa5e0ddb2383322018",
+  "source_sha256": {
+    "experiments/repair_generalization.py": "71ab0abdffb754ea6624e64513bf922efdb472e140f0aabaa5dbfbf4f0f54e16",
+    "experiments/research_completion.py": "2e5a4bf4118551ee4ec962877a1e2ec5cb9a2bc8ded137df2b811c6861b3401d",
+    "experiments/sandbox_repair_worker.c": "3691921eebde1997074e7469f83cc34a2def499bf5900288db548dd0ffdc35eb",
+    "reference/compose.yaml": "aafbc55dc918acaff6d81d25c3adf50b39fa684d17ccd21a425ab46ae2eade5e",
+    "reference/owned_lifecycle.py": "2f72f6e157b9853d647442caaeb3e48b06cc1da85de8e8d1a7ecae6290eb898c",
+    "research/next-increment-2026-09-23/E-EVAL-CASES.json": "e3647e5fd2f9bcdc3bfc738f6c3a349ebb0f5d3f919198551200390775b4410b",
+    "src/reality_bridge/emulator.py": "1a0af39cd058423ebde065d656e322db57cd8f6296ae9f9a4e919bc0a14de6c6",
+    "src/reality_bridge/reference.py": "9a9da943960cff233863f603bf54fe15276882b6d85346f71be56f7419819d51",
+    "src/reality_bridge/repair.py": "5241e24cb92e5644956eaa581bb116c553a7b74fec797f75acfdc58ca9c1688e",
+    "src/reality_bridge/repair_sandbox.py": "9c9900fa9c8cd942079d0bc6ffa1172d7be2a95512cf86a1b18c9cd8fe3b5852",
+    "src/reality_bridge/state_oracle.py": "6b31879545303e9584822b65c9006f69f31adc99988d521f2ae4a84d71d3a3fc"
+  },
+  "worker_capability": "existing sandboxed C worker selects only prewritten strip_leading_hash color transform; no code synthesis",
+  "worker_input_extraction": "first divergent train step reference_response and simulator_response only; no unseen cases"
+}

@@ -1,0 +1,12 @@
+{
+  "hard_request_cap": 2,
+  "image": "gitea/gitea@sha256:0489485c8afcb367a1c8066e081ec47d1592258dcbf729875e8bf4aa0b84a7c9",
+  "protocol_sha256": "df343372c01d632ddff14e58b6bfc237fc2e74779562d96132f1c5823b758a05",
+  "runtime_commit": "661dac21f1f3ff2fd5b448c107875ad7050f28bc",
+  "source_sha256": {
+    "experiments/capture_api_excerpt.py": "87dab94d8e7631e77e53ed2f7644ec838fc68c23901771973bfc6d2e6ef5f0eb",
+    "reference/compose.yaml": "aafbc55dc918acaff6d81d25c3adf50b39fa684d17ccd21a425ab46ae2eade5e",
+    "reference/owned_lifecycle.py": "2f72f6e157b9853d647442caaeb3e48b06cc1da85de8e8d1a7ecae6290eb898c",
+    "src/reality_bridge/reference.py": "9a9da943960cff233863f603bf54fe15276882b6d85346f71be56f7419819d51"
+  }
+}

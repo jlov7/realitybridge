@@ -1,0 +1,104 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portable:
+    name: Portable Python ${{ matrix.python-version }}
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+        with:
+          enable-cache: false
+          version: "0.12.17"
+      - name: Install declared Python and locked dependencies
+        run: |
+          uv python install "${{ matrix.python-version }}"
+          uv sync --extra dev --locked --python "${{ matrix.python-version }}"
+      - name: Static checks
+        run: |
+          uv run --python "${{ matrix.python-version }}" ruff check .
+          # These six runtime files are byte-frozen in the retained receipts.
+          # Lint still covers them; formatting them would break exact source replay.
+          uv run --python "${{ matrix.python-version }}" ruff format --check . \
+            --extend-exclude experiments/decision_consequence.py \
+            --extend-exclude experiments/prepare_blind_oracle_packet.py \
+            --extend-exclude experiments/research_completion.py \
+            --extend-exclude experiments/version_transfer.py \
+            --extend-exclude reference/owned_second_version.py \
+            --extend-exclude src/reality_bridge/state_oracle.py
+          uv run --python "${{ matrix.python-version }}" pyright src tests experiments reference
+      - name: Portable tests and coverage
+        run: uv run --python "${{ matrix.python-version }}" pytest tests/ -q -p no:cacheprovider --ignore=tests/test_reset_determinism.py --ignore=tests/test_repair_sandbox.py --cov=src/reality_bridge --cov-report=term-missing
+      - name: Exact offline study replay
+        run: uv run --python "${{ matrix.python-version }}" python experiments/public_workflow.py replay --output /tmp/rb-public-replay.json
+      - name: Frozen ordinary-study source and raw-row replay
+        run: uv run --python "${{ matrix.python-version }}" python experiments/replay_ordinary_baseline.py --output /tmp/rb-ordinary-replay.json
+      - name: Frozen next-increment source and raw-row replay
+        run: uv run --python "${{ matrix.python-version }}" python experiments/replay_next_increment.py
+      - name: Build and install wheel in a fresh environment
+        run: |
+          uv build
+          uv venv /tmp/rb-wheel --python "${{ matrix.python-version }}"
+          uv pip install --python /tmp/rb-wheel/bin/python dist/*.whl
+          /tmp/rb-wheel/bin/python -c "import reality_bridge; print(reality_bridge.__file__)"
+
+  macos-repair-isolation:
+    name: macOS repair isolation
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+        with:
+          enable-cache: false
+          version: "0.12.17"
+      - name: Install and require sandbox-exec
+        run: |
+          command -v sandbox-exec
+          uv python install 3.13
+          uv sync --extra dev --locked --python 3.13
+      - name: Prove allowed execution and denied evaluation-file read
+        run: uv run --python 3.13 pytest tests/test_repair_sandbox.py -q -p no:cacheprovider
+
+  pinned-reference:
+    name: ARM64 pinned reference integration
+    runs-on: ubuntu-24.04-arm
+    timeout-minutes: 20
+    env:
+      REALITYBRIDGE_COMPOSE_PROJECT: rb-ci-${{ github.run_id }}-${{ github.run_attempt }}
+      REALITYBRIDGE_PORT: "13000"
+      REALITYBRIDGE_REQUIRE_REFERENCE: "1"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7 # v10.2.0
+        with:
+          enable-cache: false
+          version: "0.12.17"
+      - name: Install locked dependencies
+        run: |
+          uv python install 3.13
+          uv sync --extra dev --locked --python 3.13
+      - name: Pull pinned ARM64 reference
+        run: docker pull --platform linux/arm64 gitea/gitea@sha256:0489485c8afcb367a1c8066e081ec47d1592258dcbf729875e8bf4aa0b84a7c9
+      - name: Owned reference integration
+        run: uv run --python 3.13 python reference/owned_lifecycle.py -- uv run --python 3.13 pytest tests/test_reset_determinism.py -q -p no:cacheprovider

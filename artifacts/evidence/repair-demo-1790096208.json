@@ -1,0 +1,41 @@
+{
+  "seed": 7,
+  "counterexample": {
+    "prefix": [
+      {
+        "op": "create_label",
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "label-2",
+          "#0e8a16"
+        ]
+      }
+    ],
+    "ref": {
+      "id": 101,
+      "name": "label-2",
+      "exclusive": false,
+      "is_archived": false,
+      "color": "0e8a16",
+      "description": "",
+      "url": "http://127.0.0.1:13001/api/v1/repos/rbadmin/spec-repo/labels/101"
+    },
+    "sim": {
+      "name": "label-2",
+      "color": "#0e8a16"
+    }
+  },
+  "rules": [
+    {
+      "field": "label.color",
+      "transform": "strip_leading_hash",
+      "evidence": "reference returns '0e8a16'; simulator returns '#0e8a16'"
+    }
+  ],
+  "counterexample_now_agrees": true,
+  "regressions_still_agree": true,
+  "verified": true,
+  "reason": "",
+  "elapsed_s": 1.67
+}

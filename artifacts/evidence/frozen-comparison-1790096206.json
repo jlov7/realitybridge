@@ -1,0 +1,175 @@
+{
+  "protocol": "frozen (research/PROTOCOL.md \u00a74/\u00a75)",
+  "families_total": 30,
+  "dev": {
+    "n": 14,
+    "coverage": 14,
+    "undetermined": 0,
+    "unsupported": 0,
+    "agreement": 2,
+    "disagreement": 12,
+    "reference_calls": 132
+  },
+  "test": {
+    "n": 16,
+    "coverage": 16,
+    "undetermined": 0,
+    "unsupported": 0,
+    "agreement": 2,
+    "disagreement": 14,
+    "reference_calls": 150
+  },
+  "elapsed_s": 5.01,
+  "per_family": [
+    {
+      "family": "dev-absent-issue-edit",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-absent-issue-get",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-absent-label",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-absent-title",
+      "split": "dev",
+      "outcome": "agree"
+    },
+    {
+      "family": "dev-close-and-reopen",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-close-then-read",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-create-and-read",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-create-label-dupe",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-invalid-label-create",
+      "split": "dev",
+      "outcome": "agree"
+    },
+    {
+      "family": "dev-label-add-remove",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-label-foreign",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-multi-label",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-open-then-label",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-remove-unattached",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-absent-issue-remove-label",
+      "split": "test",
+      "outcome": "agree"
+    },
+    {
+      "family": "test-add-label-twice",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-close-then-label",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-create-close-reopen",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-create-label-read",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-edit-close-absent",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-foreign-label-on-closed",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-issue-2-read",
+      "split": "test",
+      "outcome": "agree"
+    },
+    {
+      "family": "test-label-create-then-attach",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-label-then-unattach",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-multi-issue-edit",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-multi-label-create",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-null-title",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-open-label-close",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-remove-label-twice",
+      "split": "test",
+      "outcome": "diverge"
+    },
+    {
+      "family": "test-two-creates",
+      "split": "test",
+      "outcome": "diverge"
+    }
+  ]
+}

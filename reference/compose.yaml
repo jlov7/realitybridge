@@ -1,0 +1,96 @@
+# Disposable, version-pinned reference application for RealityBridge.
+#
+# Pinned by DIGEST, not tag. "Gitea 1.24.x" is not a version; a digest is.
+#
+# Design decision: SQLite rather than Postgres. Reset cost is the dominant
+# throughput risk for paired differential trials (every trial needs fresh
+# equivalent state in BOTH reference and simulator). SQLite turns a reset into
+# a file wipe instead of a two-container teardown. Gitea supports it, and this
+# instance is synthetic and single-writer by construction.
+#
+# Safety posture: loopback only, no outbound integrations, no mail, no runners,
+# no registration, cron disabled. Synthetic data only.
+
+name: realitybridge-reference
+
+services:
+  init:  # one-shot chown: fresh volumes are root-owned but Gitea runs as uid 1000
+    image: gitea/gitea@sha256:0489485c8afcb367a1c8066e081ec47d1592258dcbf729875e8bf4aa0b84a7c9
+    platform: linux/arm64
+    user: "0:0"
+    entrypoint: ["/bin/sh", "-c", "chown -R 1000:1000 /data /etc/gitea"]
+    restart: "no"
+    volumes:
+      - rb-data:/data
+      - rb-config:/etc/gitea
+
+  gitea:
+    image: gitea/gitea@sha256:0489485c8afcb367a1c8066e081ec47d1592258dcbf729875e8bf4aa0b84a7c9
+    platform: linux/arm64
+    restart: "no"
+    user: "1000:1000"  # required: Gitea's CLI refuses to run as root, breaking admin/token setup
+    depends_on:
+      init:
+        condition: service_completed_successfully
+    ports:
+      - "127.0.0.1:${REALITYBRIDGE_PORT:-13000}:3000"
+    environment:
+      # --- stable secrets: deterministic across restarts -----------------------
+      GITEA__security__SECRET_KEY: "realitybridge-fixed-secret-key-not-a-credential-0001"
+      GITEA__security__INTERNAL_TOKEN: "realitybridge-fixed-internal-token-not-a-credential-0000000000000000000000000000000000000000000000000000000000000000"
+      GITEA__security__INSTALL_LOCK: "true"
+
+      # --- storage: sqlite on the mounted volume -------------------------------
+      GITEA__database__DB_TYPE: "sqlite3"
+      GITEA__database__PATH: "/data/gitea/gitea.db"
+      GITEA__server__ROOT_URL: "http://127.0.0.1:${REALITYBRIDGE_PORT:-13000}/"
+      GITEA__server__HTTP_PORT: "3000"
+      GITEA__server__DISABLE_SSH: "true"
+      GITEA__server__START_SSH_SERVER: "false"
+
+      # --- outbound integrations: off ------------------------------------------
+      GITEA__mailer__ENABLED: "false"
+      GITEA__webhook__ALLOWED_HOST_LIST: ""
+      GITEA__webhook__SKIP_TLS_VERIFY: "false"
+      GITEA__cron__ENABLED: "false"
+      GITEA__mirror__ENABLED: "false"
+      GITEA__mirror__DEFAULT_INTERVAL: "0"
+      GITEA__mirror__MIN_INTERVAL: "0"
+      GITEA__actions__ENABLED: "false"
+      GITEA__service__DISABLE_REGISTRATION: "true"
+      GITEA__service__ENABLE_NOTIFY_MAIL: "false"
+      GITEA__service__ALLOW_ONLY_EXTERNAL_REGISTRATION: "false"
+      GITEA__service__REQUIRE_SIGNIN_VIEW: "false"
+      GITEA__service__ENABLE_BASIC_AUTHENTICATION: "true"
+      GITEA__openid__ENABLE_OPENID_SIGNIN: "false"
+      GITEA__openid__ENABLE_OPENID_SIGNUP: "false"
+      GITEA__security__DISABLE_GIT_HOOKS: "true"
+      GITEA__security__ENABLE_INTERNAL_TOKEN: "true"
+      GITEA__lfs__LFS_START_SERVER: "false"
+      GITEA__packages__ENABLED: "false"
+      GITEA__metrics__ENABLED: "false"
+      GITEA__ui__DEFAULT_THEME: "gitea"
+      GITEA__log__LEVEL: "Warn"
+      GITEA__log__MODE: "console"
+
+      # --- determinism: pin anything that would otherwise drift ----------------
+      GITEA__time__DEFAULT_UI_LOCATION: "UTC"
+      GITEA__server__OFFLINE_MODE: "true"
+
+    volumes:
+      - rb-data:/data
+      - rb-config:/etc/gitea
+
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O- http://127.0.0.1:3000/api/v1/version || exit 1"]
+      interval: 2s
+      timeout: 3s
+      retries: 60
+      start_period: 5s
+
+# Named volumes, not bind mounts. Docker manages ownership, so `user: 1000:1000`
+# works without host-side chown (which does not map cleanly on macOS bind
+# mounts). Reset is then `down -v`, which is atomic and total.
+volumes:
+  rb-data:
+  rb-config:

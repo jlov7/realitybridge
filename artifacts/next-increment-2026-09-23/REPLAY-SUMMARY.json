@@ -1,0 +1,166 @@
+{
+  "A": {
+    "censored": true,
+    "completed_cases": 2,
+    "requests": 80
+  },
+  "B": {
+    "outside_reviews": 0,
+    "packet_cases": 28
+  },
+  "C": {
+    "ordinary": {
+      "planted_families_detected": {
+        "instrument": [
+          "created_title",
+          "ignored_close",
+          "remove_every_duplicate"
+        ],
+        "ordinary": [
+          "created_title",
+          "ignored_close",
+          "remove_every_duplicate"
+        ]
+      },
+      "requests": 240,
+      "trials": 12
+    },
+    "realitybridge": {
+      "planted_families_detected": {
+        "instrument": [
+          "created_title",
+          "ignored_close",
+          "remove_every_duplicate"
+        ],
+        "ordinary": [
+          "created_title",
+          "ignored_close",
+          "remove_every_duplicate"
+        ]
+      },
+      "requests": 264,
+      "trials": 12
+    }
+  },
+  "D": {
+    "evaluation_cells": 9,
+    "requests": 277,
+    "selection_cells": 6,
+    "summary": {
+      "per_task": [
+        {
+          "best_reference_utility": 98,
+          "reference_selected_reference_utility": 98,
+          "regret": 0,
+          "simulation_induced_component": 0,
+          "simulator_selected_reference_utility": 98,
+          "task_id": "P21",
+          "task_shift_component": 0
+        },
+        {
+          "best_reference_utility": 99,
+          "reference_selected_reference_utility": 99,
+          "regret": 0,
+          "simulation_induced_component": 0,
+          "simulator_selected_reference_utility": 99,
+          "task_id": "P22",
+          "task_shift_component": 0
+        },
+        {
+          "best_reference_utility": 98,
+          "reference_selected_reference_utility": -1,
+          "regret": 99,
+          "simulation_induced_component": 0,
+          "simulator_selected_reference_utility": -1,
+          "task_id": "P23",
+          "task_shift_component": 99
+        }
+      ],
+      "rank_disagreement": false,
+      "reference_selected_policy": "minimal",
+      "reference_selection_rank": [
+        "minimal",
+        "ensure_prerequisite",
+        "inspect_first"
+      ],
+      "simulation_induced_regret_component": 0,
+      "simulator_false_task_pass": 0,
+      "simulator_selected_policy": "minimal",
+      "simulator_selection_rank": [
+        "minimal",
+        "ensure_prerequisite",
+        "inspect_first"
+      ],
+      "task_shift_regret_component": 99,
+      "total_regret": 99
+    }
+  },
+  "E": {
+    "families": {
+      "color_hash_leak": {
+        "after": {
+          "known_regression": "agree",
+          "train": "agree",
+          "unseen": "agree"
+        },
+        "before": {
+          "known_regression": "agree",
+          "train": "diverge",
+          "unseen": "diverge"
+        },
+        "status": "repair_tested"
+      },
+      "duplicate_row_overwrite": {
+        "after": {},
+        "before": {
+          "known_regression": "agree",
+          "train": "diverge",
+          "unseen": "diverge"
+        },
+        "status": "no_supported_rule"
+      },
+      "unknown_add_error": {
+        "after": {},
+        "before": {
+          "known_regression": "agree",
+          "train": "diverge",
+          "unseen": "diverge"
+        },
+        "status": "no_supported_rule"
+      }
+    },
+    "requests": 205
+  },
+  "F": {
+    "cases": 12,
+    "normalized_reference_version_deltas": {
+      "N01": [],
+      "N02": [],
+      "N03": [],
+      "N04": [],
+      "N05": [],
+      "N06": [],
+      "N07": [],
+      "N08": [],
+      "N09": [],
+      "N10": [],
+      "N11": [],
+      "N12": []
+    },
+    "requests": 233,
+    "simulator_outcomes": {
+      "N01": "agree",
+      "N02": "agree",
+      "N03": "agree",
+      "N04": "agree",
+      "N05": "agree",
+      "N06": "agree",
+      "N07": "agree",
+      "N08": "agree",
+      "N09": "agree",
+      "N10": "agree",
+      "N11": "agree",
+      "N12": "agree"
+    }
+  }
+}

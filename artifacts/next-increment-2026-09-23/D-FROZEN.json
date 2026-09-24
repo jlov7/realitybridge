@@ -1,0 +1,62 @@
+{
+  "evaluation": [
+    {
+      "color": "",
+      "issue": 1,
+      "kind": "open_after_lifecycle",
+      "label": "",
+      "task_id": "P21"
+    },
+    {
+      "color": "",
+      "issue": 1,
+      "kind": "label_absent",
+      "label": "bug",
+      "task_id": "P22"
+    },
+    {
+      "color": "778899",
+      "issue": 1,
+      "kind": "label_present",
+      "label": "d-known-missing",
+      "task_id": "P23"
+    }
+  ],
+  "hard_request_cap": 300,
+  "image": "gitea/gitea@sha256:0489485c8afcb367a1c8066e081ec47d1592258dcbf729875e8bf4aa0b84a7c9",
+  "max_per_cell_requests": 22,
+  "policies": [
+    "minimal",
+    "inspect_first",
+    "ensure_prerequisite"
+  ],
+  "protocol_sha256": "df343372c01d632ddff14e58b6bfc237fc2e74779562d96132f1c5823b758a05",
+  "runtime_commit": "19a4decd66b054bb366ad3f6c6b9481e17348d9f",
+  "selection": [
+    {
+      "color": "",
+      "issue": 2,
+      "kind": "closed",
+      "label": "",
+      "task_id": "S21"
+    },
+    {
+      "color": "334455",
+      "issue": 0,
+      "kind": "label_exists",
+      "label": "d-sel",
+      "task_id": "S22"
+    }
+  ],
+  "source_sha256": {
+    "experiments/decision_consequence.py": "068ef7c7401dfafa4d5fc71b8316120ebde0e485abd85a59c0e4ddbe73b06913",
+    "experiments/research_completion.py": "2e5a4bf4118551ee4ec962877a1e2ec5cb9a2bc8ded137df2b811c6861b3401d",
+    "reference/compose.yaml": "aafbc55dc918acaff6d81d25c3adf50b39fa684d17ccd21a425ab46ae2eade5e",
+    "reference/owned_lifecycle.py": "2f72f6e157b9853d647442caaeb3e48b06cc1da85de8e8d1a7ecae6290eb898c",
+    "src/reality_bridge/emulator.py": "1a0af39cd058423ebde065d656e322db57cd8f6296ae9f9a4e919bc0a14de6c6",
+    "src/reality_bridge/reference.py": "9a9da943960cff233863f603bf54fe15276882b6d85346f71be56f7419819d51",
+    "src/reality_bridge/state_oracle.py": "6b31879545303e9584822b65c9006f69f31adc99988d521f2ae4a84d71d3a3fc"
+  },
+  "task_provenance": "AI-authored synthetic routine workflows; P23 is an exposed E09-structure positive control, not a user-sourced demand or novel finding",
+  "utility": "100 if declared goal succeeds else 0, minus attempted action count; stop after first error/undetermined"
+}

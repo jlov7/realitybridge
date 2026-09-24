@@ -1,0 +1,103 @@
+{
+  "color_hash_leak": {
+    "actions": [
+      {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "e-color-unseen",
+          "#abc123"
+        ],
+        "op": "create_label"
+      },
+      {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "2",
+          "e-color-unseen"
+        ],
+        "op": "add_label"
+      },
+      {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "2"
+        ],
+        "op": "get_issue"
+      }
+    ],
+    "id": "EC-U"
+  },
+  "duplicate_row_overwrite": {
+    "actions": [
+      {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "e-dupe",
+          "aa0000"
+        ],
+        "op": "create_label"
+      },
+      {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "e-dupe",
+          "bb0000"
+        ],
+        "op": "create_label"
+      },
+      {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "2",
+          "e-dupe"
+        ],
+        "op": "add_label"
+      },
+      {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "2"
+        ],
+        "op": "get_issue"
+      }
+    ],
+    "id": "ED-U"
+  },
+  "unknown_add_error": {
+    "actions": [
+      {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "2"
+        ],
+        "op": "get_issue"
+      },
+      {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "2",
+          "e-unknown-b"
+        ],
+        "op": "add_label"
+      },
+      {
+        "args": [
+          "rbadmin",
+          "spec-repo",
+          "2"
+        ],
+        "op": "get_issue"
+      }
+    ],
+    "id": "EU-U"
+  }
+}

@@ -1,0 +1,16 @@
+phase,task,policy,simulator_success,reference_success,simulator_utility,reference_utility,request_cost
+selection,S21,minimal,True,True,99,99,15
+selection,S21,inspect_first,True,True,98,98,18
+selection,S21,ensure_prerequisite,True,True,98,98,18
+selection,S22,minimal,True,True,99,99,15
+selection,S22,inspect_first,True,True,98,98,18
+selection,S22,ensure_prerequisite,True,True,98,98,18
+evaluation,P21,minimal,True,True,98,98,18
+evaluation,P21,inspect_first,True,True,97,97,21
+evaluation,P21,ensure_prerequisite,True,True,97,97,21
+evaluation,P22,minimal,True,True,99,99,17
+evaluation,P22,inspect_first,True,True,98,98,20
+evaluation,P22,ensure_prerequisite,True,True,98,98,20
+evaluation,P23,minimal,False,False,-1,-1,15
+evaluation,P23,inspect_first,False,False,-2,-2,18
+evaluation,P23,ensure_prerequisite,True,True,98,98,18

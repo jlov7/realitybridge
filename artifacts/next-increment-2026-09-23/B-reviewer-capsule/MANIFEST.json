@@ -1,0 +1,147 @@
+{
+  "case_count": 28,
+  "cases": [
+    {
+      "case": "R001",
+      "path": "cases/R001.json",
+      "sha256": "d06c715eeb563a683e9dee12da82e0de2c740386522a6a8607efc9153db3e607"
+    },
+    {
+      "case": "R002",
+      "path": "cases/R002.json",
+      "sha256": "0302e9eae35ccc6896f63952d8c0f88b9a7cbedeea6a9a96173e327dfdda4359"
+    },
+    {
+      "case": "R003",
+      "path": "cases/R003.json",
+      "sha256": "aa42d80757fa01d9d95cb3faa932bc7f360851b87b4c0a44e59d5dfc11a666c9"
+    },
+    {
+      "case": "R004",
+      "path": "cases/R004.json",
+      "sha256": "2d8bd55c0f184e33ca4f795a751a2229480b4a4cc38d502c47e54912fed12015"
+    },
+    {
+      "case": "R005",
+      "path": "cases/R005.json",
+      "sha256": "b4cdf4d595e65ee7da8f280ec09f175f16241e7173662922b28df289e33eb50e"
+    },
+    {
+      "case": "R006",
+      "path": "cases/R006.json",
+      "sha256": "7b808f5c54d0908311747d52d7c43d0d337a0a5d092091b9e41f4f9db789b2b1"
+    },
+    {
+      "case": "R007",
+      "path": "cases/R007.json",
+      "sha256": "2f4205e666706552470c9bb8daf7e0c28676bddc0894abdaa18e84ace6044db6"
+    },
+    {
+      "case": "R008",
+      "path": "cases/R008.json",
+      "sha256": "bb0696d3f02bc1ff06e564e843051d13b454863f2b5e8ad4e88faec1f8ca0e32"
+    },
+    {
+      "case": "R009",
+      "path": "cases/R009.json",
+      "sha256": "555a390f15e11ab0477b59fa8b5fc8611e48858105f88d38378f65d43b079eff"
+    },
+    {
+      "case": "R010",
+      "path": "cases/R010.json",
+      "sha256": "89ffc4337806de5998282bf967a93f108bd20f7de0625c7cc08a07a62e7125f8"
+    },
+    {
+      "case": "R011",
+      "path": "cases/R011.json",
+      "sha256": "28bf50aa9939b175e63911dd55ade51db285ed250591c6823826d8d17f2f2621"
+    },
+    {
+      "case": "R012",
+      "path": "cases/R012.json",
+      "sha256": "f2302c7b7ef5575d9697f0ad4dfb47c753a7963b22ec63b29a4f844c55d08743"
+    },
+    {
+      "case": "R013",
+      "path": "cases/R013.json",
+      "sha256": "015feb8fc38fcd66501d692bf88e051fbc74704da859c6541dbdae8fe7ebbead"
+    },
+    {
+      "case": "R014",
+      "path": "cases/R014.json",
+      "sha256": "0adda2a08cba58af0fb411fcac44ccb482dcd4809fd242e756bf209338826551"
+    },
+    {
+      "case": "R015",
+      "path": "cases/R015.json",
+      "sha256": "ab0580cdbaa0e3d18b5153a76d9b82c3e31b56dae2bccf252aa9a72d0ea02a38"
+    },
+    {
+      "case": "R016",
+      "path": "cases/R016.json",
+      "sha256": "0de0ffd621a1a6ece028016e8fafc3f7ec3db5ca0de95c558901452b10673d03"
+    },
+    {
+      "case": "R017",
+      "path": "cases/R017.json",
+      "sha256": "281caf26b25e9eabe1f2fc84e7f4bdaa85ba78d26f01a9badbc691f279b2ec75"
+    },
+    {
+      "case": "R018",
+      "path": "cases/R018.json",
+      "sha256": "c46cf7f088e9d9f4844cd54d51bf1d7f3a3d7ed4c55b0c8bb83d40fe054de26a"
+    },
+    {
+      "case": "R019",
+      "path": "cases/R019.json",
+      "sha256": "d27e7b56105c3a9baa27927c532ea256f07ecccf90b00e35492be3341755eebe"
+    },
+    {
+      "case": "R020",
+      "path": "cases/R020.json",
+      "sha256": "f7225c4fa327068fe0850ddd9d7260f92caae0f3a9b1caa6fcbe46d933138901"
+    },
+    {
+      "case": "R021",
+      "path": "cases/R021.json",
+      "sha256": "9da1464ac1ea5c52976dffcb1267f117fce5bdfb55e39f5c0a61a84b300d4ff5"
+    },
+    {
+      "case": "R022",
+      "path": "cases/R022.json",
+      "sha256": "6896d672e0d7b963eb84b516d87c358f7fa31bf6b572eeab0b7d497d040c1e62"
+    },
+    {
+      "case": "R023",
+      "path": "cases/R023.json",
+      "sha256": "ee24f3a6d241f5c0a909f4b1c038d59d959745033d9285766cc014f24f68a7a3"
+    },
+    {
+      "case": "R024",
+      "path": "cases/R024.json",
+      "sha256": "7713bc8a388ec34e486773d7ce94ea7654749fa08633b7d168791e667a2c428f"
+    },
+    {
+      "case": "R025",
+      "path": "cases/R025.json",
+      "sha256": "381baec3f3f8273a0d063191f6e2f79f0aec0eba48fbaf561f6030fdf519f5ac"
+    },
+    {
+      "case": "R026",
+      "path": "cases/R026.json",
+      "sha256": "0bd38c17bc0f26ef767b91f9abd3871105380346ea7b05cf31b0f79263188112"
+    },
+    {
+      "case": "R027",
+      "path": "cases/R027.json",
+      "sha256": "f8325e1389e7baa10e6c8dba6aad94663ed8af2d7b74219820c1b08bbd488fe2"
+    },
+    {
+      "case": "R028",
+      "path": "cases/R028.json",
+      "sha256": "a4bb09bb70d32df82cc530828d023e0860503364f1e19c7592992784db76c599"
+    }
+  ],
+  "contract_version": "historical 2026-09-22",
+  "status": "awaiting_outside_review"
+}

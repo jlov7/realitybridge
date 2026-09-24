@@ -1,0 +1,43 @@
+{
+  "claim_limit": "same captured traces; no new reference calls or independent human validation",
+  "raw_replay": {
+    "action_count": 32,
+    "case_count": 12,
+    "case_outcomes": {
+      "instrument": {
+        "agree": 10,
+        "diverge": 2
+      },
+      "ordinary": {
+        "agree": 8,
+        "diverge": 2,
+        "undetermined": 2
+      }
+    },
+    "first_attempt": {
+      "actions_observed": 0,
+      "requests": 17,
+      "status": "setup_failure"
+    },
+    "instrument_case_outcomes_recomputed": true,
+    "ordinary_comparison_recomputed": true,
+    "raw_response_state_recomputed": true,
+    "requests": 229,
+    "status": "reproduced_from_raw_rows"
+  },
+  "source_snapshots": {
+    "amendment1": {
+      "archive_sha256": "e6e4ad1505e1cd942b0d1aed019d469dba481cc656cef885c090044ca6e87dec",
+      "manifest_sha256": "78e189e1bc236fa7008021c8f8268b00f28690c39216dd921f9ef97fb8cc2b08",
+      "measured_emulator_sha256": "61b81d7b4f5c97a1116855fbb93c422d772d9342c5503c1f84b7bd659f3c02ac",
+      "source_files_verified": 25
+    },
+    "initial": {
+      "archive_sha256": "95736419681f78d82826788169dd6c21d3d68c12f6b9040d36c7fe065653606c",
+      "manifest_sha256": "2223692630f2f28c4588c50c98c5c388c15a63a1f75586678ba6d2170914967c",
+      "measured_emulator_sha256": "61b81d7b4f5c97a1116855fbb93c422d772d9342c5503c1f84b7bd659f3c02ac",
+      "source_files_verified": 23
+    }
+  },
+  "status": "reproduced"
+}

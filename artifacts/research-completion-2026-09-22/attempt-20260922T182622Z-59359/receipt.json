@@ -1,0 +1,318 @@
+{
+  "architecture": "linux/arm64",
+  "bootstrap_timings": {
+    "admin_s": 0.22039012500317767,
+    "down_s": 0.12265291705261916,
+    "healthy_s": 7.183947834011633,
+    "seed_s": 0.0944425420020707,
+    "total_s": 7.6214334180695005
+  },
+  "case_module_sha256": "23231fb175ff78dfe05a96ccbc812de5da88ddbbc81f9c3e7e671f77ca4c4d7a",
+  "case_sha256": "3d286c5707f1f560fbf06d6e2c4666742c1b62102ff5af1629162d2b5650fe60",
+  "compose_project": "rb-research-20260922",
+  "dirty_tree_at_start": false,
+  "discovery_comparisons": {
+    "20260922": {
+      "random": {
+        "censored_families": 3,
+        "compared_actions": 16,
+        "completed_families": 11,
+        "cutoff": 160,
+        "divergent_families": 1,
+        "first_discovery_request": 160,
+        "response_mismatch_actions": 0,
+        "signatures": [
+          "create_label:state:issues",
+          "create_label:state:label_count",
+          "create_label:state:labels"
+        ],
+        "state_mismatch_actions": 1,
+        "undetermined_actions": 0,
+        "undetermined_families": 0,
+        "unique_signatures_per_request": 0.01875,
+        "unsupported_actions": 0,
+        "unsupported_families": 0
+      },
+      "shared_cutoff": 160,
+      "targeted": {
+        "censored_families": 4,
+        "compared_actions": 14,
+        "completed_families": 10,
+        "cutoff": 160,
+        "divergent_families": 3,
+        "first_discovery_request": 13,
+        "response_mismatch_actions": 2,
+        "signatures": [
+          "add_label:response:error_category",
+          "create_label:state:issues",
+          "create_label:state:label_count",
+          "create_label:state:labels",
+          "remove_label:response:error_category"
+        ],
+        "state_mismatch_actions": 1,
+        "undetermined_actions": 0,
+        "undetermined_families": 0,
+        "unique_signatures_per_request": 0.03125,
+        "unsupported_actions": 0,
+        "unsupported_families": 0
+      }
+    },
+    "20260923": {
+      "random": {
+        "censored_families": 4,
+        "compared_actions": 14,
+        "completed_families": 10,
+        "cutoff": 162,
+        "divergent_families": 2,
+        "first_discovery_request": 28,
+        "response_mismatch_actions": 2,
+        "signatures": [
+          "add_label:response:error_category",
+          "remove_label:response:error_category"
+        ],
+        "state_mismatch_actions": 0,
+        "undetermined_actions": 0,
+        "undetermined_families": 0,
+        "unique_signatures_per_request": 0.012345679012345678,
+        "unsupported_actions": 0,
+        "unsupported_families": 0
+      },
+      "shared_cutoff": 162,
+      "targeted": {
+        "censored_families": 3,
+        "compared_actions": 16,
+        "completed_families": 11,
+        "cutoff": 162,
+        "divergent_families": 3,
+        "first_discovery_request": 13,
+        "response_mismatch_actions": 2,
+        "signatures": [
+          "add_label:response:error_category",
+          "create_label:state:issues",
+          "create_label:state:label_count",
+          "create_label:state:labels",
+          "remove_label:response:error_category"
+        ],
+        "state_mismatch_actions": 1,
+        "undetermined_actions": 0,
+        "undetermined_families": 0,
+        "unique_signatures_per_request": 0.030864197530864196,
+        "unsupported_actions": 0,
+        "unsupported_families": 0
+      }
+    },
+    "20260924": {
+      "random": {
+        "censored_families": 4,
+        "compared_actions": 15,
+        "completed_families": 10,
+        "cutoff": 162,
+        "divergent_families": 2,
+        "first_discovery_request": 42,
+        "response_mismatch_actions": 1,
+        "signatures": [
+          "create_label:state:issues",
+          "create_label:state:label_count",
+          "create_label:state:labels",
+          "remove_label:response:error_category"
+        ],
+        "state_mismatch_actions": 1,
+        "undetermined_actions": 0,
+        "undetermined_families": 0,
+        "unique_signatures_per_request": 0.024691358024691357,
+        "unsupported_actions": 0,
+        "unsupported_families": 0
+      },
+      "shared_cutoff": 162,
+      "targeted": {
+        "censored_families": 3,
+        "compared_actions": 16,
+        "completed_families": 11,
+        "cutoff": 162,
+        "divergent_families": 3,
+        "first_discovery_request": 13,
+        "response_mismatch_actions": 2,
+        "signatures": [
+          "add_label:response:error_category",
+          "create_label:state:issues",
+          "create_label:state:label_count",
+          "create_label:state:labels",
+          "remove_label:response:error_category"
+        ],
+        "state_mismatch_actions": 1,
+        "undetermined_actions": 0,
+        "undetermined_families": 0,
+        "unique_signatures_per_request": 0.030864197530864196,
+        "unsupported_actions": 0,
+        "unsupported_families": 0
+      }
+    }
+  },
+  "elapsed_s": 24.446,
+  "excluded_server_traffic": "Docker healthchecks and Compose infrastructure probes",
+  "exposed_requalification_after": {
+    "color_counterexample": {
+      "evidence": "",
+      "outcome": "agree",
+      "reason": ""
+    },
+    "previously_agreeing_regression": {
+      "evidence": "",
+      "outcome": "agree",
+      "reason": ""
+    }
+  },
+  "exposed_requalification_before": {
+    "color_counterexample": {
+      "evidence": "labels: ref=(('bug', 'd73a4a'),) sim=(('bug', '#d73a4a'),)",
+      "outcome": "diverge",
+      "reason": "issue fields differ"
+    },
+    "previously_agreeing_regression": {
+      "evidence": "",
+      "outcome": "agree",
+      "reason": ""
+    }
+  },
+  "image": "gitea/gitea@sha256:0489485c8afcb367a1c8066e081ec47d1592258dcbf729875e8bf4aa0b84a7c9",
+  "phase_ledger": {
+    "bootstrap": 7,
+    "evaluation": 296,
+    "policy": 531,
+    "random_20260922": 160,
+    "random_20260923": 176,
+    "random_20260924": 178,
+    "repair_promotion": 4,
+    "requalification": 4,
+    "targeted": 162
+  },
+  "policy_summary": {
+    "per_task": [
+      {
+        "best_reference_utility": 99,
+        "reference_selected_reference_utility": 99,
+        "regret": 0,
+        "simulation_induced_component": 0,
+        "simulator_selected_reference_utility": 99,
+        "task_id": "P01",
+        "task_shift_component": 0
+      },
+      {
+        "best_reference_utility": 99,
+        "reference_selected_reference_utility": 99,
+        "regret": 0,
+        "simulation_induced_component": 0,
+        "simulator_selected_reference_utility": 99,
+        "task_id": "P02",
+        "task_shift_component": 0
+      },
+      {
+        "best_reference_utility": 99,
+        "reference_selected_reference_utility": 99,
+        "regret": 0,
+        "simulation_induced_component": 0,
+        "simulator_selected_reference_utility": 99,
+        "task_id": "P03",
+        "task_shift_component": 0
+      },
+      {
+        "best_reference_utility": 99,
+        "reference_selected_reference_utility": 99,
+        "regret": 0,
+        "simulation_induced_component": 0,
+        "simulator_selected_reference_utility": 99,
+        "task_id": "P04",
+        "task_shift_component": 0
+      },
+      {
+        "best_reference_utility": 98,
+        "reference_selected_reference_utility": -1,
+        "regret": 99,
+        "simulation_induced_component": 0,
+        "simulator_selected_reference_utility": -1,
+        "task_id": "P05",
+        "task_shift_component": 99
+      },
+      {
+        "best_reference_utility": 98,
+        "reference_selected_reference_utility": 98,
+        "regret": 0,
+        "simulation_induced_component": 0,
+        "simulator_selected_reference_utility": 98,
+        "task_id": "P06",
+        "task_shift_component": 0
+      }
+    ],
+    "rank_disagreement": false,
+    "reference_selected_policy": "minimal",
+    "reference_selection_rank": [
+      "minimal",
+      "ensure_prerequisite",
+      "inspect_first"
+    ],
+    "simulation_induced_regret_component": 0,
+    "simulator_false_task_pass": 0,
+    "simulator_selected_policy": "minimal",
+    "simulator_selection_rank": [
+      "minimal",
+      "ensure_prerequisite",
+      "inspect_first"
+    ],
+    "task_shift_regret_component": 99,
+    "total_regret": 99
+  },
+  "protocol_sha256": "60e5f90b4f588b304ab25453d2b96d690a8222d97183d9fb8d3d5a61b5e91e8c",
+  "reference_port": 13002,
+  "requalification_after": {
+    "evidence": "",
+    "outcome": "agree",
+    "reason": ""
+  },
+  "requalification_before": {
+    "evidence": "labels: ref=(('api', '6f42c1'), ('bug', 'd73a4a'), ('ui', '0e8a16')) sim=(('api', '#6f42c1'), ('bug', '#d73a4a'), ('ui', '#0e8a16')); issues: ref=[{'number': 1, 'title': 'issue-one', 'body': 'synthetic first issue', 'state': 'open', 'labels': (('bug', 'd73a4a'),), 'assignees': (), 'closed': False, 'temporal_relation': 'updated_not_before_created'}, {'number': 2, 'title': 'issue-two', 'body': 'synthetic second issue', 'state': 'open', 'labels': (), 'assignees': (), 'closed': False, 'temporal_relation': 'updated_not_before_created'}] sim=[{'number': 1, 'title': 'issue-one', 'body': 'synthetic first issue', 'state': 'open', 'labels': (('bug', '#d73a4a'),), 'assignees': (), 'closed': False, 'temporal_relation': 'updated_not_before_created'}, {'number': 2, 'title': 'issue-two', 'body': 'synthetic second issue', 'state': 'open', 'labels': (), 'assignees': (), 'closed': False, 'temporal_relation': 'updated_not_before_created'}]",
+    "outcome": "diverge",
+    "reason": "declared post-state differs"
+  },
+  "running_reference_image": {
+    "architecture": "arm64",
+    "declared": "gitea/gitea@sha256:0489485c8afcb367a1c8066e081ec47d1592258dcbf729875e8bf4aa0b84a7c9",
+    "image_id": "sha256:0489485c8afcb367a1c8066e081ec47d1592258dcbf729875e8bf4aa0b84a7c9"
+  },
+  "sandbox": {
+    "allowed_execution": true,
+    "compiler_sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2",
+    "forbidden_probe_repo_path": "experiments/prospective_cases.py",
+    "forbidden_read_denied": true,
+    "profile_sha256": [
+      "4c33ad4c6a731d91340dc718e716508b32ece302f15b4cb88711960bdc699a6d",
+      "5b9b7437e0254617693502c8ac616e8c753637f58c9a2054949a39301a698407"
+    ],
+    "profile_templates": [
+      "(version 1)\n(deny default)\n(import \"system.sb\")\n(deny network*)\n(allow process-exec (literal \"$WORKER\"))\n(allow file-read* file-map-executable\n    (literal \"$WORKER\")\n    (literal \"$INPUT\"))\n(allow file-write* (subpath \"$OUTPUT\"))",
+      "(version 1)\n(deny default)\n(import \"system.sb\")\n(deny network*)\n(allow process-exec (literal \"$WORKER\"))\n(allow file-read* file-map-executable\n    (literal \"$WORKER\")\n    (literal \"$INPUT\"))\n(allow file-write* (subpath \"$OUTPUT\"))"
+    ],
+    "rules": [
+      {
+        "evidence": "paired values differ only by a simulator leading hash",
+        "field": "label.color",
+        "transform": "strip_leading_hash"
+      }
+    ],
+    "worker_binary_sha256": "b890c35f92bb121db4888321a9db6608f221ba3068b63e600456940874f6d03c",
+    "worker_source_sha256": "3691921eebde1997074e7469f83cc34a2def499bf5900288db548dd0ffdc35eb"
+  },
+  "source_commit": "19b2b4776b538ca5bf7326118fe6fcdae7f21cd2",
+  "source_manifest_sha256": {
+    "experiments/prospective_cases.py": "23231fb175ff78dfe05a96ccbc812de5da88ddbbc81f9c3e7e671f77ca4c4d7a",
+    "experiments/reproduce_research_completion.py": "4a4e4aaca483a36ade9fa0dcb610e3132e5819b7a1eced6425bc0d3caae3c4d0",
+    "experiments/research_completion.py": "5c5c4c1d138511d6b7126d3e8d48104397db53b86b0d65526787c61583ece2d3",
+    "experiments/sandbox_repair_worker.c": "3691921eebde1997074e7469f83cc34a2def499bf5900288db548dd0ffdc35eb",
+    "src/reality_bridge/emulator.py": "61b81d7b4f5c97a1116855fbb93c422d772d9342c5503c1f84b7bd659f3c02ac",
+    "src/reality_bridge/prospective_comparison.py": "1a3933e13a2e7efe362eb97dccc088bef0d69541b174e277b255d589aec8d319",
+    "src/reality_bridge/reference.py": "9a9da943960cff233863f603bf54fe15276882b6d85346f71be56f7419819d51",
+    "src/reality_bridge/repair_sandbox.py": "9c9900fa9c8cd942079d0bc6ffa1172d7be2a95512cf86a1b18c9cd8fe3b5852",
+    "src/reality_bridge/state_oracle.py": "5c68518742ce7a8fac518b95c770b03dbe08dcc7f8d5baaff6bacfbf93634e9b"
+  },
+  "status": "complete",
+  "total_harness_requests": 1518
+}

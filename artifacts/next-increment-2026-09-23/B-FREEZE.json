@@ -1,0 +1,19 @@
+{
+  "amended_packet_receipt_sha256": "8b647b08ba7f3f0662d9bc0d27c7ee4c0ba636eba472d892c90eb9664cf0a476",
+  "answer_key_sha256": "f7f105637a91ab2346534916495d675efe8213f6a15a5852f6d69f349273e0b2",
+  "current_contract_changed": true,
+  "forbidden_verdict_keys_found": 0,
+  "generator_sha256": "3bfd8159c9da9fdc6db2f5e118488773fa2a866cfd7b85543d947eb73b975cfb",
+  "historical_contract_commit": "bcb55139991da376ed90b323935a3c8d2cedac67",
+  "historical_contract_sha256": {
+    "observation": "14701b0db889e274f624ce1a71c816dc9ba862a2cc28123ec4a86c2e67a9c0fc",
+    "operations": "7564aac931eea13f5babc5de1ab5aff5acd96f6e2fc4641f74b1ed1a9015f822"
+  },
+  "historical_verdict_comparison": "pending; changes from current identity rule must be assessed separately",
+  "original_packet_receipt_sha256": "ec5378c862c9f09e94352105df54549a23f543d3debfbbcbd5ae10866608c492",
+  "outside_classifications_received": 0,
+  "reviewer_case_count": 28,
+  "reviewer_manifest_sha256": "fac2cd236757bc55a4ecf714ef9d7bcb2d123031fb5de30c92369d1d265e2ca7",
+  "source_commit": "eedeb10640376c54b6558bb22a6bdcbc053c4921",
+  "status": "prepared_awaiting_outside_human_review"
+}

@@ -1,0 +1,32 @@
+{
+  "captured_at": "2026-09-22T16:56:53.785145+00:00",
+  "post_run_non_runtime_changes": {
+    "src/reality_bridge/repair.py": {
+      "current_sha256": "5241e24cb92e5644956eaa581bb116c553a7b74fec797f75acfdc58ca9c1688e",
+      "change": "module docstring only; no executable statement changed"
+    },
+    "pyproject.toml": "pyright include scope expanded only",
+    ".github/workflows/ci.yml": "locked sync, format gate, and pyright path alignment only"
+  },
+  "files_at_live_run": {
+    "experiments/differential_run.py": "1da36af7ce94cd6a71a41274237223aef015639a1b30a0f19bafa7bef315e79d",
+    "experiments/families.py": "439336fc4fc4b3c9787562b22890209dec57c35d8bd3bc8888c0e11a56530490",
+    "experiments/frozen_comparison.py": "425dd58e374fa0b58fab6d02242d26a781254a43dfb06e7cc4cf03dae61545d7",
+    "experiments/repair_demo.py": "bad7c8121e46b7b9777bc948155c2c9a9afc1a61c8026219376f42e9ecd0b386",
+    "pyproject.toml": "ba475c066039d2d7bf0ec22633b6b18a80ba323a24c036d699bad5e0e1b22c84",
+    "reference/compose.yaml": "aafbc55dc918acaff6d81d25c3adf50b39fa684d17ccd21a425ab46ae2eade5e",
+    "reference/seed.py": "a762b02850056cac3eb784a082b79e55d048672f4df26b6573e5e1565ad63389",
+    "src/reality_bridge/differential.py": "6dca49492c3c21ffef9b36dd8af158b9bc95727adb23228a8a8fc7ddaf4bb409",
+    "src/reality_bridge/emulator.py": "44fcda0d3192a3bfc935ced0ba50d58ab8c85983fd100aa6db6f83a43add7b1e",
+    "src/reality_bridge/projection.py": "2116f6eccf3b99bf7b9f2e7267c5b66273ef877ccff357973f880b7a226f0a9d",
+    "src/reality_bridge/reference.py": "0d087434057dc59f08963d516403a6e98ec0d813f7863b83aed87b2d9221137c",
+    "src/reality_bridge/repair.py": "b9ec5cc8371c9175464ccfadaac79e0ac29bd6b507d98f35a027e5e22b3548d7",
+    "tests/conftest.py": "df33c287989ee05c892533f92419d1a9d5a600b903c8f664f5054c62974f8e16",
+    "tests/test_differential_outcomes.py": "b4fb4dc659efdb1c2580c79beb574527f83f70b80f2a3093605f63d814382503",
+    "tests/test_reference_isolation.py": "76a87600db15299bac31fe807f7b0c7ca7e9069a48c9a57f5548bc8555f63398",
+    "tests/test_reference_runtime_safety.py": "af4e6f48f508be7441ea4de17c902e8b02528093db6e9990d471450b888e0849",
+    "tests/test_repair_holdout_isolation.py": "948439e22d697602a65f7df5a3d7dc3cdc9e05a22f8311300e391cce411188f3",
+    "tests/test_reset_determinism.py": "a2e58b8a50c66d2c00bf40a7e8f045b24839bd6334d45c3c58df3d7561f3b466",
+    "uv.lock": "789f44d2482dce9d1cda63e4ef1cc7147da1e8d2fd15bc53595f708f24b145fa"
+  }
+}

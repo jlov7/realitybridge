@@ -1,0 +1,35 @@
+{
+  "architecture": "linux/arm64",
+  "case_ids": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N11",
+    "N12"
+  ],
+  "exposed_set": true,
+  "hard_request_cap": 320,
+  "official_tag": "gitea/gitea:1.24.6-rootless",
+  "protocol_sha256": "df343372c01d632ddff14e58b6bfc237fc2e74779562d96132f1c5823b758a05",
+  "runtime_commit": "4d641d751dd0a210739ebd16f9a99ed79e354d75",
+  "second_image": "gitea/gitea@sha256:fe643e27326a7fae86dedb544d9392ba662adc3083763a21bd7acc35796449fd",
+  "source_sha256": {
+    "experiments/ordinary_baseline_cases.py": "dab88dddbebb3c138890520fca25f651a10b2bc244a20ddc17ead6addb89429d",
+    "experiments/research_completion.py": "2e5a4bf4118551ee4ec962877a1e2ec5cb9a2bc8ded137df2b811c6861b3401d",
+    "experiments/version_transfer.py": "560c5650bf818dca521e595d0f4ea96461e5bb0859ce53eced739c661207561b",
+    "reference/compose-1.24.6.yaml": "5699a6c62bf38b0d7ba20fd2d168f843cc160136d18aee63e0c46d6b5a049395",
+    "reference/owned_lifecycle.py": "2f72f6e157b9853d647442caaeb3e48b06cc1da85de8e8d1a7ecae6290eb898c",
+    "reference/owned_second_version.py": "832caab02c74e269f6fa57ecd257b5f230ce9a0fe857c6859ad5a31237309e3b",
+    "reference/seed.py": "a762b02850056cac3eb784a082b79e55d048672f4df26b6573e5e1565ad63389",
+    "src/reality_bridge/emulator.py": "1a0af39cd058423ebde065d656e322db57cd8f6296ae9f9a4e919bc0a14de6c6",
+    "src/reality_bridge/reference.py": "9a9da943960cff233863f603bf54fe15276882b6d85346f71be56f7419819d51",
+    "src/reality_bridge/state_oracle.py": "6b31879545303e9584822b65c9006f69f31adc99988d521f2ae4a84d71d3a3fc"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "protocol": "frozen (research/PROTOCOL.md \u00a74/\u00a75)",
+  "families_total": 4,
+  "dev": {
+    "n": 4,
+    "coverage": 4,
+    "unsupported_reported": 0,
+    "agreement": 1,
+    "disagreement": 3,
+    "reference_calls": 10
+  },
+  "test": {
+    "n": 0,
+    "coverage": 0,
+    "unsupported_reported": 0,
+    "agreement": 0,
+    "disagreement": 0,
+    "reference_calls": 0
+  },
+  "elapsed_s": 0.49,
+  "per_family": [
+    {
+      "family": "dev-absent-issue-edit",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-absent-issue-get",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-absent-label",
+      "split": "dev",
+      "outcome": "diverge"
+    },
+    {
+      "family": "dev-absent-title",
+      "split": "dev",
+      "outcome": "agree"
+    }
+  ]
+}

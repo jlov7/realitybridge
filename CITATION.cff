@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: Cite the software and the exact source commit used for a reported result.
+title: RealityBridge
+version: 0.0.1
+authors:
+  - family-names: Lovell
+    given-names: Jason
+type: software
+license: MIT
+abstract: Bounded reference-backed simulator comparison against a pinned Gitea build.
+repository-code: https://github.com/jlov7/realitybridge

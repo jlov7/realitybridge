@@ -1,0 +1,321 @@
+{
+  "adjudication": "pending independent trace review; no false-alarm or miss claim",
+  "case_hash": "1daafc6dd4a5956b4293f516d69d6a054715ad8809b9973403b7e492e7101168",
+  "case_outcomes": {
+    "instrument": {
+      "undetermined": 1
+    },
+    "ordinary": {
+      "undetermined": 1
+    }
+  },
+  "classification": "fresh AI-authored ordinary testing study",
+  "clean_tree_at_start": true,
+  "comparator_effort": "unknown; shared raw trace and HTTP workload, implementation effort not measured",
+  "ended_at_utc": "2026-09-23T16:09:06.201785+00:00",
+  "frozen_manifest_sha256": "2223692630f2f28c4588c50c98c5c388c15a63a1f75586678ba6d2170914967c",
+  "frozen_origin_commit": "a8e802d96b7e5d0160552735884ac5520715db25",
+  "frozen_source_sha256": {
+    "contracts/observation.yaml": "14701b0db889e274f624ce1a71c816dc9ba862a2cc28123ec4a86c2e67a9c0fc",
+    "contracts/operations.yaml": "7564aac931eea13f5babc5de1ab5aff5acd96f6e2fc4641f74b1ed1a9015f822",
+    "experiments/materialize_research_baseline.py": "bf042a6878c25e151383dde7e38d137da1ac3f0ab8dd018a7799eead0f87c227",
+    "experiments/ordinary_baseline.py": "b520b7c27ff572f66f842b054b9beb2462414e3f019736d6a5c94e7969cc2f15",
+    "experiments/ordinary_baseline_cases.py": "dab88dddbebb3c138890520fca25f651a10b2bc244a20ddc17ead6addb89429d",
+    "experiments/ordinary_baseline_study.py": "0d59e5063be59e2c6672a72716c131d50f34ef7a0bc518aab3a1ec48f8db6d4e",
+    "experiments/prepare_ordinary_study.py": "1d8d294d34f6eaae5651d85f691cd2b6217a2ca4977db4d6ee4961b99c071080",
+    "experiments/prospective_cases.py": "23231fb175ff78dfe05a96ccbc812de5da88ddbbc81f9c3e7e671f77ca4c4d7a",
+    "experiments/reproduce_research_completion.py": "4a4e4aaca483a36ade9fa0dcb610e3132e5819b7a1eced6425bc0d3caae3c4d0",
+    "experiments/research_completion.py": "5c5c4c1d138511d6b7126d3e8d48104397db53b86b0d65526787c61583ece2d3",
+    "experiments/sandbox_repair_worker.c": "3691921eebde1997074e7469f83cc34a2def499bf5900288db548dd0ffdc35eb",
+    "reference/compose.yaml": "aafbc55dc918acaff6d81d25c3adf50b39fa684d17ccd21a425ab46ae2eade5e",
+    "reference/owned_lifecycle.py": "2f72f6e157b9853d647442caaeb3e48b06cc1da85de8e8d1a7ecae6290eb898c",
+    "reference/seed.py": "a762b02850056cac3eb784a082b79e55d048672f4df26b6573e5e1565ad63389",
+    "research/ordinary-baseline-2026-09-23/PROTOCOL.md": "56950f8c824fd968495850dfe7728e0b41b704b4dac0bdda7178c354d7bb75a7",
+    "src/reality_bridge/differential.py": "6dca49492c3c21ffef9b36dd8af158b9bc95727adb23228a8a8fc7ddaf4bb409",
+    "src/reality_bridge/emulator.py": "602693308d0996a51edcbc18d6f0fceb48f43f511da3fecb4a4c959334d1eb10",
+    "src/reality_bridge/projection.py": "7df247c3dc8652242bbd3a58011cc3861422cc2256b32d34f1382c0018e58664",
+    "src/reality_bridge/prospective_comparison.py": "1a3933e13a2e7efe362eb97dccc088bef0d69541b174e277b255d589aec8d319",
+    "src/reality_bridge/reference.py": "9a9da943960cff233863f603bf54fe15276882b6d85346f71be56f7419819d51",
+    "src/reality_bridge/repair.py": "5241e24cb92e5644956eaa581bb116c553a7b74fec797f75acfdc58ca9c1688e",
+    "src/reality_bridge/repair_sandbox.py": "9c9900fa9c8cd942079d0bc6ffa1172d7be2a95512cf86a1b18c9cd8fe3b5852",
+    "src/reality_bridge/state_oracle.py": "5c68518742ce7a8fac518b95c770b03dbe08dcc7f8d5baaff6bacfbf93634e9b"
+  },
+  "hard_cap": 320,
+  "image": {
+    "architecture": "arm64",
+    "declared": "gitea/gitea@sha256:0489485c8afcb367a1c8066e081ec47d1592258dcbf729875e8bf4aa0b84a7c9",
+    "image_id": "sha256:0489485c8afcb367a1c8066e081ec47d1592258dcbf729875e8bf4aa0b84a7c9"
+  },
+  "interrupted_attempt": null,
+  "requests": 17,
+  "rows": [
+    {
+      "instrument": {
+        "outcome": "undetermined",
+        "reason": "incomplete case",
+        "steps": []
+      },
+      "ordinary": {
+        "outcome": "undetermined",
+        "reason": "initial states differ",
+        "steps": []
+      },
+      "raw": {
+        "actions": [
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "n01-a"
+            ],
+            "op": "create_issue"
+          },
+          {
+            "args": [
+              "rbadmin",
+              "spec-repo",
+              "3"
+            ],
+            "op": "get_issue"
+          }
+        ],
+        "case_id": "N01",
+        "completed_at_request": 17,
+        "initial_comparison": {
+          "evidence": "labels: ref=(('api', '6f42c1'), ('bug', 'd73a4a'), ('ui', '0e8a16')) sim=(('api', '#6f42c1'), ('bug', '#d73a4a'), ('ui', '#0e8a16')); issues: ref=[{'number': 1, 'title': 'issue-one', 'body': 'synthetic first issue', 'state': 'open', 'labels': (('bug', 'd73a4a'),), 'assignees': (), 'closed': False, 'temporal_relation': 'updated_not_before_created'}, {'number': 2, 'title': 'issue-two', 'body': 'synthetic second issue', 'state': 'open', 'labels': (), 'assignees': (), 'closed': False, 'temporal_relation': 'updated_not_before_created'}] sim=[{'number': 1, 'title': 'issue-one', 'body': 'synthetic first issue', 'state': 'open', 'labels': (('bug', '#d73a4a'),), 'assignees': (), 'closed': False, 'temporal_relation': 'updated_not_before_created'}, {'number': 2, 'title': 'issue-two', 'body': 'synthetic second issue', 'state': 'open', 'labels': (), 'assignees': (), 'closed': False, 'temporal_relation': 'updated_not_before_created'}]",
+          "outcome": "diverge",
+          "reason": "declared post-state differs"
+        },
+        "outcome": "setup_failure",
+        "reference_initial": {
+          "issues": [
+            {
+              "assets": [],
+              "assignee": null,
+              "assignees": null,
+              "body": "synthetic second issue",
+              "closed_at": null,
+              "comments": 0,
+              "created_at": "2026-09-23T16:09:06Z",
+              "due_date": null,
+              "html_url": "http://127.0.0.1:13017/rbadmin/spec-repo/issues/2",
+              "id": 4,
+              "is_locked": false,
+              "labels": [],
+              "milestone": null,
+              "number": 2,
+              "original_author": "",
+              "original_author_id": 0,
+              "pin_order": 0,
+              "pull_request": null,
+              "ref": "",
+              "repository": {
+                "full_name": "rbadmin/spec-repo",
+                "id": 2,
+                "name": "spec-repo",
+                "owner": "rbadmin"
+              },
+              "state": "open",
+              "title": "issue-two",
+              "updated_at": "2026-09-23T16:09:06Z",
+              "url": "http://127.0.0.1:13017/api/v1/repos/rbadmin/spec-repo/issues/2",
+              "user": {
+                "active": true,
+                "avatar_url": "http://127.0.0.1:13017/avatars/ff2030324e333a44f868b1dcaad49246",
+                "created": "2026-09-23T16:09:05Z",
+                "description": "",
+                "email": "rbadmin@example.invalid",
+                "followers_count": 0,
+                "following_count": 0,
+                "full_name": "",
+                "html_url": "http://127.0.0.1:13017/rbadmin",
+                "id": 1,
+                "is_admin": true,
+                "language": "",
+                "last_login": "1970-01-01T00:00:00Z",
+                "location": "",
+                "login": "rbadmin",
+                "login_name": "",
+                "prohibit_login": false,
+                "restricted": false,
+                "source_id": 0,
+                "starred_repos_count": 0,
+                "username": "rbadmin",
+                "visibility": "public",
+                "website": ""
+              }
+            },
+            {
+              "assets": [],
+              "assignee": null,
+              "assignees": null,
+              "body": "synthetic first issue",
+              "closed_at": null,
+              "comments": 0,
+              "created_at": "2026-09-23T16:09:06Z",
+              "due_date": null,
+              "html_url": "http://127.0.0.1:13017/rbadmin/spec-repo/issues/1",
+              "id": 3,
+              "is_locked": false,
+              "labels": [
+                {
+                  "color": "d73a4a",
+                  "description": "",
+                  "exclusive": false,
+                  "id": 4,
+                  "is_archived": false,
+                  "name": "bug",
+                  "url": "http://127.0.0.1:13017/api/v1/repos/rbadmin/spec-repo/labels/4"
+                }
+              ],
+              "milestone": null,
+              "number": 1,
+              "original_author": "",
+              "original_author_id": 0,
+              "pin_order": 0,
+              "pull_request": null,
+              "ref": "",
+              "repository": {
+                "full_name": "rbadmin/spec-repo",
+                "id": 2,
+                "name": "spec-repo",
+                "owner": "rbadmin"
+              },
+              "state": "open",
+              "title": "issue-one",
+              "updated_at": "2026-09-23T16:09:06Z",
+              "url": "http://127.0.0.1:13017/api/v1/repos/rbadmin/spec-repo/issues/1",
+              "user": {
+                "active": true,
+                "avatar_url": "http://127.0.0.1:13017/avatars/ff2030324e333a44f868b1dcaad49246",
+                "created": "2026-09-23T16:09:05Z",
+                "description": "",
+                "email": "rbadmin@example.invalid",
+                "followers_count": 0,
+                "following_count": 0,
+                "full_name": "",
+                "html_url": "http://127.0.0.1:13017/rbadmin",
+                "id": 1,
+                "is_admin": true,
+                "language": "",
+                "last_login": "1970-01-01T00:00:00Z",
+                "location": "",
+                "login": "rbadmin",
+                "login_name": "",
+                "prohibit_login": false,
+                "restricted": false,
+                "source_id": 0,
+                "starred_repos_count": 0,
+                "username": "rbadmin",
+                "visibility": "public",
+                "website": ""
+              }
+            }
+          ],
+          "labels": [
+            {
+              "color": "6f42c1",
+              "description": "",
+              "exclusive": false,
+              "id": 6,
+              "is_archived": false,
+              "name": "api",
+              "url": "http://127.0.0.1:13017/api/v1/repos/rbadmin/spec-repo/labels/6"
+            },
+            {
+              "color": "d73a4a",
+              "description": "",
+              "exclusive": false,
+              "id": 4,
+              "is_archived": false,
+              "name": "bug",
+              "url": "http://127.0.0.1:13017/api/v1/repos/rbadmin/spec-repo/labels/4"
+            },
+            {
+              "color": "0e8a16",
+              "description": "",
+              "exclusive": false,
+              "id": 5,
+              "is_archived": false,
+              "name": "ui",
+              "url": "http://127.0.0.1:13017/api/v1/repos/rbadmin/spec-repo/labels/5"
+            }
+          ]
+        },
+        "request_cost": 10,
+        "simulator_initial": {
+          "issues": [
+            {
+              "assignees": [],
+              "body": "synthetic first issue",
+              "closed_at": null,
+              "created_at": "2000-01-01T00:00:00Z",
+              "labels": [
+                {
+                  "color": "#d73a4a",
+                  "name": "bug"
+                }
+              ],
+              "number": 1,
+              "state": "open",
+              "title": "issue-one",
+              "updated_at": "2000-01-01T00:00:00Z",
+              "url": "/repos/spec-repo/issues/1"
+            },
+            {
+              "assignees": [],
+              "body": "synthetic second issue",
+              "closed_at": null,
+              "created_at": "2000-01-01T00:00:00Z",
+              "labels": [],
+              "number": 2,
+              "state": "open",
+              "title": "issue-two",
+              "updated_at": "2000-01-01T00:00:00Z",
+              "url": "/repos/spec-repo/issues/2"
+            }
+          ],
+          "labels": [
+            {
+              "color": "#d73a4a",
+              "name": "bug"
+            },
+            {
+              "color": "#0e8a16",
+              "name": "ui"
+            },
+            {
+              "color": "#6f42c1",
+              "name": "api"
+            }
+          ]
+        },
+        "steps": []
+      }
+    }
+  ],
+  "source_hashes": {
+    "experiments/ordinary_baseline.py": "b520b7c27ff572f66f842b054b9beb2462414e3f019736d6a5c94e7969cc2f15",
+    "experiments/ordinary_baseline_cases.py": "dab88dddbebb3c138890520fca25f651a10b2bc244a20ddc17ead6addb89429d",
+    "experiments/ordinary_baseline_study.py": "0d59e5063be59e2c6672a72716c131d50f34ef7a0bc518aab3a1ec48f8db6d4e",
+    "research/ordinary-baseline-2026-09-23/PROTOCOL.md": "56950f8c824fd968495850dfe7728e0b41b704b4dac0bdda7178c354d7bb75a7",
+    "src/reality_bridge/emulator.py": "61b81d7b4f5c97a1116855fbb93c422d772d9342c5503c1f84b7bd659f3c02ac"
+  },
+  "started_at_utc": "2026-09-23T16:08:57.191705+00:00",
+  "status": "setup_failure",
+  "study_commit": "931d0829e9d7bdee858c6d1f4aba4e17fd506d80",
+  "study_tree": "34a9b8689825cfe45404c6f07949a136c5e0f37d",
+  "unstarted_cases": [
+    "N02",
+    "N03",
+    "N04",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10",
+    "N11",
+    "N12"
+  ]
+}

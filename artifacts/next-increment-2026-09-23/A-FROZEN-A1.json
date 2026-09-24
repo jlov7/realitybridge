@@ -1,0 +1,156 @@
+{
+  "amendment": "A-AMENDMENT-1.md",
+  "baseline_commit": "bcb55139991da376ed90b323935a3c8d2cedac67",
+  "cases": [
+    {
+      "actions": [
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "rb-a-same",
+            "112233"
+          ],
+          "op": "create_label"
+        },
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "rb-a-same",
+            "112233"
+          ],
+          "op": "create_label"
+        },
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "2",
+            "rb-a-same"
+          ],
+          "op": "add_label"
+        },
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "2",
+            "rb-a-same"
+          ],
+          "op": "remove_label"
+        },
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "2"
+          ],
+          "op": "get_issue"
+        }
+      ],
+      "id": "A01"
+    },
+    {
+      "actions": [
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "rb-a-same",
+            "112233"
+          ],
+          "op": "create_label"
+        },
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "rb-a-same",
+            "112233"
+          ],
+          "op": "create_label"
+        },
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "2",
+            "rb-a-same"
+          ],
+          "op": "add_label"
+        },
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "2",
+            "rb-a-same"
+          ],
+          "op": "add_label"
+        },
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "2"
+          ],
+          "op": "get_issue"
+        }
+      ],
+      "id": "A02"
+    },
+    {
+      "actions": [
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "rb-a-same",
+            "112233"
+          ],
+          "op": "create_label"
+        },
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "rb-a-same",
+            "112233"
+          ],
+          "op": "create_label"
+        },
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "2",
+            "rb-a-same"
+          ],
+          "op": "remove_label"
+        },
+        {
+          "args": [
+            "rbadmin",
+            "spec-repo",
+            "2"
+          ],
+          "op": "get_issue"
+        }
+      ],
+      "id": "A03"
+    }
+  ],
+  "hard_request_cap": 80,
+  "image": "gitea/gitea@sha256:0489485c8afcb367a1c8066e081ec47d1592258dcbf729875e8bf4aa0b84a7c9",
+  "protocol_sha256": "df343372c01d632ddff14e58b6bfc237fc2e74779562d96132f1c5823b758a05",
+  "purpose": "observe same-name same-color row resolution and membership through six operations; planted states remain distinct from live outcomes",
+  "runtime_commit": "81f148a8ffd1272797dd870a4b92d5aa8cae8fba",
+  "source_sha256": {
+    "experiments/duplicate_identity_probe.py": "9919f5989dd34f40f2aafebf274142030977780663edb98a723bf8772f2eca52",
+    "reference/owned_lifecycle.py": "2f72f6e157b9853d647442caaeb3e48b06cc1da85de8e8d1a7ecae6290eb898c",
+    "src/reality_bridge/reference.py": "9a9da943960cff233863f603bf54fe15276882b6d85346f71be56f7419819d51",
+    "src/reality_bridge/state_oracle.py": "cf6887635d13a254a8da60a14c0b5b1444c05659ae68862b6275203d15374a27",
+    "tests/test_duplicate_label_identity_boundary.py": "d0e9057708a94e2ac0c893ae2d5ada51a174a80fc956fb5257bac663b2c3b0e3"
+  }
+}
